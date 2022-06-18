@@ -1,6 +1,5 @@
 # manifold-learning-examples
-### This repo is a group project regarding the examples of different implementations of manifold learning.
-### and the study of the dependence of manifold learning algorithms on parameters
+### This repo is a group project regarding the examples of different implementations of manifold learning and the study of the dependence of manifold learning algorithms on parameters
 
 Next meeting: Monday 6/20 2:30pm
 
