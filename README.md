@@ -24,6 +24,6 @@ Plan for week 2
  
  2. aspect ratio examples: script rectangle, torus, rectangle with hole, ...
 -- algorithms: isomap, spectral embedding, LLE, t-SNE, UMAP
-- make param files for each data set (Hangliang, Yujia, Qirui)
+-- make param files for each data set (Hangliang, Yujia, Qirui)
 
  3. generate data with variable density (Murray)
