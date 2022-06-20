@@ -24,7 +24,7 @@ Plan for week 2
  1.t-SNE on a disk and 2D Gaussian (Daniel) 
  
  2. aspect ratio examples: script rectangle, torus, rectangle with hole, ...
--- algorithms: isomap, spectral embedding, LLE, t-SNE, UMAP
--- make param files for each data set (Hangliang, Yujia, Qirui)
+ -- algorithms: isomap, spectral embedding, LLE, t-SNE, UMAP
+ -- make param files for each data set (Hangliang, Yujia, Qirui)
 
  3. generate data with variable density (Murray)
