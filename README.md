@@ -20,8 +20,8 @@ Plan for week 1
 * write code that generates synthetic examples
 
 Plan for week 2
-- t-SNE on a disk and 2D Gaussian
-- aspect ratio examples: script rectangle, torus, rectangle with hole, ...
+ 1.t-SNE on a disk and 2D Gaussian
+ 2. aspect ratio examples: script rectangle, torus, rectangle with hole, ...
 -- algorithms: isomap, spectral embedding, LLE, t-SNE, UMAP
 - make param files for each data set
-- generate data with variable density
+3. generate data with variable density
