@@ -20,6 +20,7 @@ Plan for week 1
 * write code that generates synthetic examples
 
 Plan for week 2
+
  1.t-SNE on a disk and 2D Gaussian (Daniel) 
  
  2. aspect ratio examples: script rectangle, torus, rectangle with hole, ...
