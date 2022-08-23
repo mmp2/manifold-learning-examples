@@ -12,13 +12,18 @@ import matplotlib.pyplot as plt
 from matplotlib import ticker
 
 
-def plot_3d_shape_single(datapoints, colors, title, figsize=(10, 10), set_division=False, save_path=False, show_plot=True):
+def plot_3d_shape_single(datapoints, colors, title, figsize=(10, 10), marker_size=20, rotate=False,
+                         set_division=False, save_path=False, show_plot=True):
     """
     parameters
         "datapoints": Dataset used to draw the shape.
         "colors": Dataset used to color the shape; can be None.
         "title": Name of the shape.
-        "figsize": size of plot, 10 * 10 as default value.
+        "figsize": Size of plot, 10 * 10 as default value.
+        "marker_size": Size of marker, 20 as default value.
+        "rotate": A tuple (azim, elev) to adjust figure, azim is
+        the degree to rotate by z axis, elev is the degree to rotate
+        by y axis; can be None.
         "set_division": Choose whether set division in each axis scale;
         False as default value; if wanna set division, input real value.
         "save_path": The path for saving the plot; False as default value;
@@ -31,11 +36,14 @@ def plot_3d_shape_single(datapoints, colors, title, figsize=(10, 10), set_divisi
     fig = plt.figure(figsize=figsize)  # set figure size
     ax = fig.add_subplot(projection='3d')
 
-    ax.scatter(datapoints.T[0], datapoints.T[1], datapoints.T[2], c=colors)
+    ax.scatter(datapoints.T[0], datapoints.T[1], datapoints.T[2], s=marker_size, c=colors)
     plt.title(title, fontsize=20)
 
     # rotate figure
-    #ax.view_init(azim=-60, elev=9)
+    if not rotate:
+        ax.view_init(azim=-30, elev=9)
+    else:
+        ax.view_init(azim=rotate[0], elev=rotate[1])
     
     if set_division != False:
         # set division in each axis scale
@@ -50,13 +58,15 @@ def plot_3d_shape_single(datapoints, colors, title, figsize=(10, 10), set_divisi
         plt.show()
 
 
-def plot_3d_shape_all(datapoints, colors, title, figsize=(20, 20), set_division=False, save_path=False, show_plot=True):
+def plot_3d_shape_all(datapoints, colors, title, figsize=(20, 20), marker_size=20, set_division=False,
+                      save_path=False, show_plot=True):
     """
     parameters
         "datapoints": Dataset used for plotting.
         "colors": Dataset used to color the shape; can be None.
         "title": Name of the shape.
-        "figsize": size of plot, 20 * 20 as default value.
+        "figsize": Size of plot, 20 * 20 as default value.
+        "marker_size": Size of marker, 20 as default value.
         "set_division": Choose whether set division in each axis scale;
         False as default value; if wanna set division, input real value.
         "save_path": The path for saving the plot; False as default value;
@@ -77,7 +87,7 @@ def plot_3d_shape_all(datapoints, colors, title, figsize=(20, 20), set_division=
         sub_data = datapoints[:, [0,combination[0],combination[1]]]
         x, y, z = sub_data.T
         ax = fig.add_subplot(math.ceil(num_of_plots/5), 5, i, projection='3d')
-        ax.scatter(x, y, z, c=colors)
+        ax.scatter(x, y, z, s=marker_size, c=colors)
         ax.set_title("v0, v" + str(combination[0]) + ", v" + str(combination[1]))
 
         if set_division != False:
@@ -104,8 +114,8 @@ def plot_2d_shape_single(datapoints, colors, title, figsize=(10, 10), marker_siz
         returned from sklearn manifold learning methods.
         "colors": Dataset used to color the shape; can be None.
         "title": Name of the shape.
-        "figsize": size of plot, 10 * 10 as default value.
-        "marker_size": size of marker, 20 as default value.
+        "figsize": Size of plot, 10 * 10 as default value.
+        "marker_size": Size of marker, 20 as default value.
         "set_division": Choose whether set division in each axis scale;
         False as default value; if wanna set division, input real value.
         "save_path": The path for saving the plot; False as default value;
@@ -117,7 +127,7 @@ def plot_2d_shape_single(datapoints, colors, title, figsize=(10, 10), marker_siz
     """
     x, y = datapoints.T
     plt.figure(figsize=figsize)
-    plt.scatter(x, y, c=colors, s=20, alpha=0.8)
+    plt.scatter(x, y, c=colors, s=marker_size)
     plt.title(title, fontsize=20)
 
     if set_division != False:
@@ -139,8 +149,8 @@ def plot_2d_shape_all(datapoints, colors, title, figsize=(20, 20), marker_size=2
         "datapoints": Returned matrix from sklearn manifold learning methods, for plotting.
         "colors": Dataset used to color each shape; can be None.
         "title": Name of the plot.
-        "figsize": size of plot, 20 * 20 as default value.
-        "marker_size": size of marker, 2 as default value.
+        "figsize": Size of plot, 20 * 20 as default value.
+        "marker_size": Size of marker, 2 as default value.
         "set_division": Choose whether set division in each axis scale;
         False as default value; if wanna set division, input real value.
         "save_path": The path for saving the plot; False as default value;
@@ -158,7 +168,7 @@ def plot_2d_shape_all(datapoints, colors, title, figsize=(20, 20), marker_size=2
         sub_data = datapoints[:, [0,i]]
         x, y = sub_data.T
         ax = fig.add_subplot(math.ceil(num_of_plots/2), 2, i)
-        ax.scatter(x, y, s=2, c=colors)
+        ax.scatter(x, y, s=marker_size, c=colors)
         ax.set_title("v0, v"+str(i))
 
         if set_division != False:
