@@ -3,6 +3,15 @@ Functions to generate density variable datasets of swiss roll and torus.
 
 from gen_data import non_uniform_swiss
 from gen_data import non_uniform_torus
+from gen_data import uniform_swiss_roll
+from gen_data import uniform_torus
+
+a = longer side of the rectangle in 2d
+b = shorter side of the rectangle in 2d
+K = number of centers
+sigma = standard deviation
+n = number of points
+seed = random seed
 """
 
 import numpy as np
@@ -120,3 +129,21 @@ def non_uniform_torus(a=10, b=5, K=2, sigma=5/4, n=10000, seed=999):
         data = np.vstack((data, p))
     data = data[1:]
     return data
+
+def uniform_swiss_roll(a=10, b=5, num=10000, seed=999):
+    np.random.seed(seed)
+    xlist = np.random.uniform(0, a, num) 
+    ylist = np.random.uniform(0, b, num)
+    points = np.vstack((xlist, ylist)).T
+    swiss_roll = make_swiss_roll(points, a, b)
+    print(swiss_roll.shape)
+    return swiss_roll
+
+def uniform_torus(a=10, b=5, num=10000, seed=999):
+    np.random.seed(seed)
+    xlist = np.random.uniform(0, a, num) 
+    ylist = np.random.uniform(0, b, num)
+    points = np.vstack((xlist, ylist)).T
+    torus = make_torus(points, a, b)
+    print(torus.shape)
+    return torus
