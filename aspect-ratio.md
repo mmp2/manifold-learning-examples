@@ -5,7 +5,7 @@ What is aspect ratio?
 ---------------------
 Below we see two examples of rectangles with different aspect ratios. 
 
-*figures here, just rectangles 4/3 and ~ 4 *
+*figures here, just rectangles 4/3 and ~ 8/1.9 *-- (ALL FIGURES: same units on all axes. no numbers on the axes. Color by the longest dimension in all plots)
 
 Below we see data sampled uniformly from these 2 rectangles.
 
@@ -13,7 +13,7 @@ Below we see data sampled uniformly from these 2 rectangles.
 
 Aspect ratio can be defined for other simple manifolds, that can be obtained by "rolling up" these rectangles. 
 
-*figures here: 2 swiss rolls, then 2 tori*
+*figures here: 2 swiss rolls, then 2 tori*  -with same aspect ratios as rectangles above
 
 These manifolds all have *intrinsic dimension* $d=2$, because they are obtained by a transformation of a rectangle. Later we will discuss examples of manifolds with $d=3$, such as the sphere. Note however that the torus and swiss roll live in $m=3$ coordinates, and we call $m$ the *embedding dimension*. Of course not all manifolds are obtained from rectangles. Qualitatively, we think of the aspect ratio of a manifold as the aspect ratio of the data, after the manifold is "unfolded" in $d$ dimensions. *a figure here*
 
@@ -28,7 +28,7 @@ Rectangle
 
 The rectangle is the simplest possible manifold. The embedding algorithm will map data sampled from rectangles $(x_1,x_2)$ to points in $m=2$ with coordinates $v_1,v_2$ **MMP decision point: use 0-indexed coordinates? I think YES**
 
-*figure -- see handwritten notes *
+*figure -- see handwritten notes *  embedding alg x aspect ratio x complete figures (all pairs e-vectors) 
 
 Swiss roll
 ----------
@@ -39,6 +39,10 @@ Rectangle with hole
 
 Torus
 -----
+
+
++ single plot of best embedding (aspect ratio x alg )
++ 1-2 complete examples
 
 A manifold with $d=3$ 
 ---------------------
