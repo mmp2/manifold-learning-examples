@@ -10,6 +10,7 @@ a = longer side of the rectangle in 2d
 b = shorter side of the rectangle in 2d
 K = number of centers
 sigma = standard deviation
+grid: if True, the centers would be aligned in a grid. Otherwise, they would be placed randomly.
 n = number of points
 seed = random seed
 """
@@ -38,18 +39,19 @@ def make_swiss_roll(points, a, b):
     data = np.vstack((x, y, z))
     return data.T
 
-def non_uniform_swiss(a=10, b=5, K=2, sigma=5/4, n=10000, seed=999):
+def non_uniform_swiss(a=10, b=5, K=2, sigma=5/4, n=10000, grid=True, seed=999):
     # Step 2.a
-    np.random.seed(seed)
-    mu_Xs = np.random.uniform(0, a, K)
-    mu_Ys = np.random.uniform(0, b, K)
-    mu = np.vstack((mu_Xs, mu_Ys)).T
-
-    # Step 2.a
-    mu = np.zeros((K, 2))
-    mu[:, 1] = b/2
-    for i in range(K):
-        mu[i, 0] = a/(2*(K-1)+2) * (2*i+1)
+    if not grid:
+        np.random.seed(seed)
+        mu_Xs = np.random.uniform(0, a, K)
+        mu_Ys = np.random.uniform(0, b, K)
+        mu = np.vstack((mu_Xs, mu_Ys)).T
+    else:
+        # Step 2.b
+        mu = np.zeros((K, 2))
+        mu[:, 1] = b/2
+        for i in range(K):
+            mu[i, 0] = a/(2*(K-1)+2) * (2*i+1)
 
 
     # Step 3.a
@@ -84,18 +86,20 @@ def non_uniform_swiss(a=10, b=5, K=2, sigma=5/4, n=10000, seed=999):
     data = data[1:]
     return data
 
-def non_uniform_torus(a=10, b=5, K=2, sigma=5/4, n=10000, seed=999):
-    # Step 2.a
-    np.random.seed(seed)
-    mu_Xs = np.random.uniform(0, a, K)
-    mu_Ys = np.random.uniform(0, b, K)
-    mu = np.vstack((mu_Xs, mu_Ys)).T
+def non_uniform_torus(a=10, b=5, K=2, sigma=5/4, n=10000, grid=True, seed=999):
 
-    # Step 2.a
-    mu = np.zeros((K, 2))
-    mu[:, 1] = b/2
-    for i in range(K):
-        mu[i, 0] = a/(2*(K-1)+2) * (2*i+1)
+    if not grid:
+        # Step 2.a
+        np.random.seed(seed)
+        mu_Xs = np.random.uniform(0, a, K)
+        mu_Ys = np.random.uniform(0, b, K)
+        mu = np.vstack((mu_Xs, mu_Ys)).T
+    else:
+        # Step 2.b
+        mu = np.zeros((K, 2))
+        mu[:, 1] = b/2
+        for i in range(K):
+            mu[i, 0] = a/(2*(K-1)+2) * (2*i+1)
 
 
     # Step 3.a
@@ -136,7 +140,6 @@ def uniform_swiss_roll(a=10, b=5, num=10000, seed=999):
     ylist = np.random.uniform(0, b, num)
     points = np.vstack((xlist, ylist)).T
     swiss_roll = make_swiss_roll(points, a, b)
-    print(swiss_roll.shape)
     return swiss_roll
 
 def uniform_torus(a=10, b=5, num=10000, seed=999):
@@ -145,5 +148,4 @@ def uniform_torus(a=10, b=5, num=10000, seed=999):
     ylist = np.random.uniform(0, b, num)
     points = np.vstack((xlist, ylist)).T
     torus = make_torus(points, a, b)
-    print(torus.shape)
     return torus
