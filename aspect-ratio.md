@@ -14,7 +14,7 @@ Below we see data sampled uniformly from these 2 rectangles.
 
 *figures* here
 
-<img width="700" alt="2" src="https://user-images.githubusercontent.com/91905313/187147225-efeb300f-ab0d-4141-b68a-97218dfc74bb.png">
+<img width="700" height="200" alt="2" src="https://user-images.githubusercontent.com/91905313/187147225-efeb300f-ab0d-4141-b68a-97218dfc74bb.png">
 
 Aspect ratio can be defined for other simple manifolds, that can be obtained by "rolling up" these rectangles. 
 
