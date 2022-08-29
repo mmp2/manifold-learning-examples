@@ -6,6 +6,8 @@ What is aspect ratio?
 Below we see two examples of rectangles with different aspect ratios. 
 
 *figures here, just rectangles 4/3 and ~ 8/1.9 *-- (ALL FIGURES: same units on all axes. no numbers on the axes. Color by the longest dimension in all plots)
+<img width="747" alt="1" src="https://user-images.githubusercontent.com/91905313/187146916-762d03f4-e78e-4be8-92e3-5ad79cc5a771.png">
+
 
 Below we see data sampled uniformly from these 2 rectangles.
 
