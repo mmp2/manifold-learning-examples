@@ -6,6 +6,7 @@ What is aspect ratio?
 Below we see two examples of rectangles with different aspect ratios. 
 
 *figures here, just rectangles 4/3 and ~ 8/1.9 *-- (ALL FIGURES: same units on all axes. no numbers on the axes. Color by the longest dimension in all plots)
+
 <img width="747" alt="1" src="https://user-images.githubusercontent.com/91905313/187146916-762d03f4-e78e-4be8-92e3-5ad79cc5a771.png">
 
 
@@ -13,9 +14,14 @@ Below we see data sampled uniformly from these 2 rectangles.
 
 *figures* here
 
+<img width="761" alt="2" src="https://user-images.githubusercontent.com/91905313/187147225-efeb300f-ab0d-4141-b68a-97218dfc74bb.png">
+
 Aspect ratio can be defined for other simple manifolds, that can be obtained by "rolling up" these rectangles. 
 
 *figures here: 2 swiss rolls, then 2 tori*  -with same aspect ratios as rectangles above
+
+<img width="642" alt="3" src="https://user-images.githubusercontent.com/91905313/187147263-02e73146-6fe8-4ab4-ab79-26c45ff1e14d.png">
+<img width="652" alt="4" src="https://user-images.githubusercontent.com/91905313/187147280-eb865af8-795d-45cf-8814-31a7d2fd3708.png">
 
 These manifolds all have *intrinsic dimension* $d=2$, because they are obtained by a transformation of a rectangle. Later we will discuss examples of manifolds with $d=3$, such as the sphere. Note however that the torus and swiss roll live in $m=3$ coordinates, and we call $m$ the *embedding dimension*. Of course not all manifolds are obtained from rectangles. Qualitatively, we think of the aspect ratio of a manifold as the aspect ratio of the data, after the manifold is "unfolded" in $d$ dimensions. *a figure here*
 
