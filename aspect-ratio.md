@@ -40,7 +40,7 @@ The rectangle is the simplest possible manifold. The embedding algorithm will ma
 
 *Isomap Embedding:*
 Aspect ratio 4/3, 5/2, 6/1.9:
-<img src = [https://user-images.githubusercontent.com/91905313/187150694-030d9bb0-2c30-46a1-ad9a-ef0f2053c9f6.jpg](https://github.com/mk322/manifold-learning-examples/blob/2a4921545c279217516890df1b88011c513d5bc4/aspect-ratio-plots/Isomap/Rectangle/Rectangle_a4b3_Isomap_x.jpg) width="330" height="500">
+<img src = [https://user-images.githubusercontent.com/91905313/187150694-030d9bb0-2c30-46a1-ad9a-ef0f2053c9f6.jpg](https://github.com/mk322/manifold-learning-examples/blob/2a4921545c279217516890df1b88011c513d5bc4/aspect-ratio-plots/Isomap/Rectangle/Rectangle_a4b3_Isomap_x.jpg) >
 
 
 
