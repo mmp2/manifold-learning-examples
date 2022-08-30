@@ -44,6 +44,13 @@ Aspect ratio 4/3, 5/2, 6/1.9:
 
 <img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a4b3_Isomap_x.jpg width="330" height="500"><img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a5b2_Isomap_x.jpg width="330" height="500"><img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a6b1_9_Isomap_x.jpg width="330" height="500">
 
+Aspect ratio 8/1.9, 10/1.9, 16/1.9:
+
+<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a8b1_9_Isomap_x.jpg width="330" height="500"><img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a10b1_9_Isomap_x.jpg width="330" height="500"><img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a16b1_9_Isomap_x.jpg width="330" height="500">
+
+Aspect ratio 20/1.9, 30/1.9:
+
+<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a20b1_9_Isomap_x.jpg width="330" height="500"><img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a30b1_9_Isomap_x.jpg width="330" height="500">
 
 
 *Locally Linear Embedding(LLE):*
