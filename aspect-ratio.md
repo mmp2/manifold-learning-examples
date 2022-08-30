@@ -38,6 +38,11 @@ The rectangle is the simplest possible manifold. The embedding algorithm will ma
 
 *figure -- see handwritten notes *  embedding alg x aspect ratio x complete figures (all pairs e-vectors) 
 
+*Isomap Embedding:*
+Aspect ratio 4/3, 5/2, 6/1.9:
+<img src = [https://user-images.githubusercontent.com/91905313/187150694-030d9bb0-2c30-46a1-ad9a-ef0f2053c9f6.jpg](https://raw.githubusercontent.com/mk322/manifold-learning-examples/main/aspect-ratio-plots/Isomap/Rectangle/Rectangle_a4b3_Isomap_x.jpg) width="330" height="500">
+
+
 *Locally Linear Embedding(LLE):*
 
 Aspect ratio 4/3, 5/2, 6/1.9:
