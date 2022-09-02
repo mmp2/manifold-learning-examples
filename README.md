@@ -22,7 +22,7 @@ Plan for Weeks of **September 5-19** _(Priority lowest = LP < nothing < HP=highe
 * First draft of tsne.md **MMP**
 * First draft of variable density effects and neighborhood graph effects [**LP, MMP**]
 * computing and displaying distortions 
-* a cool manifold [**LP**]
+* a cool manifold [**LP**]  Find a HUSKY 3D model. Number of points must be high enough for the display to look good. For example, this site https://www.turbosquid.com/3d-models/dog-haskey-statue-max/952051 has a model for sale that is only $14, has 1.2M points. It also has a husky model, but a bit more expensive. However, there are free data sets elsewhere that are just as good (or better, as they have fewer  points)
 
 Done tasks
 * Generate rectangles with a fixed set of aspect ratios, uniformly sampled (code and 1 data set of each) -- pretty much done by Yujia
