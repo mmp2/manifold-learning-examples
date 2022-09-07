@@ -12,6 +12,7 @@
 # 1.rect
 # 2.rect_hole
 # 3.swiss_roll
+# 3(1).swiss_roll for Spectral Embedding
 # 4.torus
 # --------------------------------------------------------------
 import matplotlib.pyplot as plt
@@ -110,6 +111,28 @@ plt.show()
 plt.scatter(swiss_roll[:,0],swiss_roll[:,2],s=1)
 plt.show()
 #np.savetxt('swissRoll_n5000_dim20_a20b1.9.csv', swiss_roll, delimiter=',')
+
+
+# In[198]:
+
+
+# generate the swiss roll dataset for Spectral Embedding
+# It has 10000 datapoints, with aspect ratio = 8/6.
+n_samples = 10000
+length_phi = 8/6
+length_z = 1
+
+np.random.seed(seed=101)
+t = 1.5 * np.pi * (1 + 2 * np.random.uniform(0, length_phi, n_samples)  / length_phi)
+y = 21 * np.random.uniform(0, length_z, n_samples) / length_z
+x = t * np.cos(t)
+z = t * np.sin(t)
+X = np.vstack((x, y, z))
+X = X.T
+
+# datapoints for coloring
+phi = np.squeeze(t)
+Z = np.squeeze(y)
 
 
 # In[221]:
