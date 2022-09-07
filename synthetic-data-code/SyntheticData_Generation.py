@@ -73,7 +73,7 @@ plt.show()
 #np.savetxt('rectHole_n5000_dim20_a30b1.9.csv', rect_hole, delimiter=',')
 
 
-# In[198]:
+# In[201]:
 
 
 #swiss roll, 20 dimension, sample size 5000
