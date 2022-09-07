@@ -113,7 +113,7 @@ plt.show()
 #np.savetxt('swissRoll_n5000_dim20_a20b1.9.csv', swiss_roll, delimiter=',')
 
 
-# In[198]:
+# In[201]:
 
 
 # generate the swiss roll dataset for Spectral Embedding
