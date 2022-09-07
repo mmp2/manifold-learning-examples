@@ -135,6 +135,25 @@ phi = np.squeeze(t)
 Z = np.squeeze(y)
 
 
+# in method form
+def swiss_roll_for_spectral(a, b, datapoints=10000, seed=101):
+    n_samples = 10000
+    length_phi = a/b
+    length_z = b/b
+
+    np.random.seed(seed=seed)
+    t = 1.5 * np.pi * (1 + 2 * np.random.uniform(0, length_phi, n_samples)  / length_phi)
+    y = 21 * np.random.uniform(0, length_z, n_samples) / length_z
+    x = t * np.cos(t)
+    z = t * np.sin(t)
+    X = np.vstack((x, y, z))
+    X = X.T
+    phi = np.squeeze(t)
+    Z = np.squeeze(y)
+    
+    return phi, Z, X
+
+
 # In[221]:
 
 
