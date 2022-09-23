@@ -40,9 +40,7 @@ def plot_3d_shape_single(datapoints, colors, title, figsize=(10, 10), marker_siz
     plt.title(title, fontsize=20)
 
     # rotate figure
-    if not rotate:
-        ax.view_init(azim=-30, elev=9)
-    else:
+    if rotate:
         ax.view_init(azim=rotate[0], elev=rotate[1])
     
     if set_division != False:
@@ -58,8 +56,7 @@ def plot_3d_shape_single(datapoints, colors, title, figsize=(10, 10), marker_siz
         plt.show()
 
 
-def plot_3d_shape_all(datapoints, colors, title, figsize=(20, 20), marker_size=20, set_division=False,
-                      save_path=False, show_plot=True):
+def plot_3d_shape_all(datapoints, colors, title, figsize=(20, 20), marker_size=20, set_division=False, save_path=False, show_plot=True):
     """
     parameters
         "datapoints": Dataset used for plotting.
@@ -87,7 +84,7 @@ def plot_3d_shape_all(datapoints, colors, title, figsize=(20, 20), marker_size=2
         sub_data = datapoints[:, [0,combination[0],combination[1]]]
         x, y, z = sub_data.T
         ax = fig.add_subplot(math.ceil(num_of_plots/5), 5, i, projection='3d')
-        ax.scatter(x, y, z, s=marker_size, c=colors)
+        ax.scatter(x, y, z, c=colors, s=marker_size)
         ax.set_title("v0, v" + str(combination[0]) + ", v" + str(combination[1]))
 
         if set_division != False:
@@ -127,7 +124,7 @@ def plot_2d_shape_single(datapoints, colors, title, figsize=(10, 10), marker_siz
     """
     x, y = datapoints.T
     plt.figure(figsize=figsize)
-    plt.scatter(x, y, c=colors, s=marker_size)
+    plt.scatter(x, y, c=colors, s=marker_size, alpha=0.8)
     plt.title(title, fontsize=20)
 
     if set_division != False:
