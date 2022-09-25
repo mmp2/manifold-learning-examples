@@ -3,9 +3,9 @@ The effect of manifold aspect ratio
 
 What is aspect ratio? 
 ---------------------
-Below we see two examples of rectangles with different aspect ratios. 
+Below we see two examples of rectangles with different aspect ratios (4/3 for the left rectangle, and 8/1.9=4.21 for the right rectangle).
 
-*figures here, just rectangles 4/3 and ~ 8/1.9 *-- (ALL FIGURES: same units on all axes. no numbers on the axes. Color by the longest dimension in all plots)
+
 
 <img width="700" height="200" alt="1" src="https://user-images.githubusercontent.com/91905313/187146916-762d03f4-e78e-4be8-92e3-5ad79cc5a771.png">
 
@@ -23,9 +23,11 @@ Two Tori:
 
 <img width="700" height="300" alt="截屏2022-08-29 15 35 52" src="https://user-images.githubusercontent.com/91905313/187148724-467b6638-8f40-42da-8e77-dbb4e8ee5d9d.png">
 
-These manifolds all have *intrinsic dimension* $d=2$, because they are obtained by a transformation of a rectangle. Later we will discuss examples of manifolds with $d=3$, such as the sphere. Note however that the torus and swiss roll live in $m=3$ coordinates, and we call $m$ the *embedding dimension*. Of course not all manifolds are obtained from rectangles. Qualitatively, we think of the aspect ratio of a manifold as the aspect ratio of the data, after the manifold is "unfolded" in $d$ dimensions. *a figure here*
+These manifolds all have *intrinsic dimension* $d=2$, because they are obtained by a transformation of a rectangle. Even though they are 2 dimensional manifold, the torus and swiss roll live in $m=3$ coordinates, and we call $m$ the *embedding dimension*. Of course not all manifolds are obtained from rectangles. Qualitatively, we think of the aspect ratio of a manifold as the aspect ratio of the data, after the manifold is "unfolded" in $d$ dimensions. 
 
-Most real data is not generated form rectangles, but most real data, when unfolded, has aspect ratio $>2$, in other words, not close to 1. The following examples illustrate how this affects the embeddings produced by different embedding algorithms. 
+Most real data is not generated from rectangles, but most real data, when unfolded, has aspect ratio $>2$, in other words, not close to 1. The following examples illustrate how this affects the embeddings produced by different embedding algorithms. 
+
+Before embarking on the examples, the readers are invited to take a detour dealing with the question: what is a good embedding? And what isn't?
 
 *todo: a section on what is a good embedding. continuous map with continuous inverse, smooth map with smooth inverse. with examples*.
 
@@ -34,9 +36,7 @@ Most real data is not generated form rectangles, but most real data, when unfold
 Rectangle
 ---------
 
-The rectangle is the simplest possible manifold. The embedding algorithm will map data sampled from rectangles $(x_1,x_2)$ to points in $m=2$ with coordinates $v_1,v_2$ **MMP decision point: use 0-indexed coordinates? I think YES**
-
-*figure -- see handwritten notes *  embedding alg x aspect ratio x complete figures (all pairs e-vectors) 
+The rectangle is the simplest possible manifold. The embedding algorithm will map _input data_  $(x_1,x_2)$ sampled from rectangles to points in $m=2$ with _embedding coordinates_ denoted $(v_0,v_1)$. The $v$ notation for embedding coordinates is motivated by the fact that most embedding algorithms use the eigenvectors of a matrix as embedding coordinates (Isomap, SpectralEmbedding, LLE). The UMAP algorithm starts with coordinates obtained by eigenvectors, which are then post-processed; t-SNE is the only method that does not use eigendecomposition. 
 
 **Uniform Density**
 
