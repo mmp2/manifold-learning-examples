@@ -40,7 +40,7 @@ The rectangle is the simplest possible manifold. The embedding algorithm will ma
 
 **Uniform Density**
 
-| ML algo | 4/3         | 5/2       | 6/1.9 | 8/1.9 | 10/1.9 | 16/1.9 | 20/1.9 | 30/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 | 15.79 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |    :----:    | 
 | Isomap |<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a4b3_Isomap_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a5b2_Isomap_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a6b1_9_Isomap_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a8b1_9_Isomap_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a10b1_9_Isomap_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a16b1_9_Isomap_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a20b1_9_Isomap_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Isomap/Rectangle/Rectangle_a30b1_9_Isomap_x.jpg width="111" height="168">|
 | Spectral |<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a4b3_Spectral_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a5b2_Spectral_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a6b1_9_Spectral_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a8b1_9_Spectral_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a10b1_9_Spectral_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a16b1_9_Spectral_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a20b1_9_Spectral_x.jpg width="111" height="168">|<img src = aspect-ratio-plots/Spectral-megaman/Rectangle/Rectangle_a30b1_9_Spectral_x.jpg width="111" height="168">|
@@ -49,7 +49,7 @@ The rectangle is the simplest possible manifold. The embedding algorithm will ma
 
 *The best single plot for different aspect ratio*
 
-| ML algo | 4/3         | 5/2       | 6/1.9 | 8/1.9 | 10/1.9 | 16/1.9 | 20/1.9 | 30/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 | 15.79 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |    :----:    | 
 | UMAP    | <img src = https://user-images.githubusercontent.com/81238710/190961595-41515ac0-3437-4c6d-b70f-56f964cfb086.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961596-5bb5a029-5743-4b7e-9b19-defbded719a7.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961597-dabfe06d-232b-4c8e-a4b8-fb3956a8b3d3.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961600-de79c4df-037f-4ba4-b8c0-1880f4ef09e6.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961601-d6a0e72b-b835-4ad5-8be8-8752c61022d8.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961602-653e8a59-05d9-4b6a-b26b-ebf6e8443736.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961603-81266b80-536d-4fa3-bfbb-4d89ed1d34c4.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961604-d1b06b31-ce45-4ec2-abd2-b242a7c4efd2.jpeg width="111" height="111"> |
 
@@ -59,7 +59,7 @@ A swiss roll is just a rectangle rolled up. So, the embedding algorithms should 
 
 **Uniform Density**
 
-| ML algo | 8/6         | 10/4       | 12/3.8 | 8/1.9 | 10/1.9 | 16/1.9 | 20/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |
 | Isomap     | <img src =aspect-ratio-plots/Isomap/SwissRoll/Swiss_Roll_a8b6_Isomap_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Isomap/SwissRoll/Swiss_Roll_a10b4_Isomap_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Isomap/SwissRoll/Swiss_Roll_a12b3_8_Isomap_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Isomap/SwissRoll/Swiss_Roll_a8b1_9_Isomap_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Isomap/SwissRoll/Swiss_Roll_a10b1_9_Isomap_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Isomap/SwissRoll/Swiss_Roll_a16b1_9_Isomap_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Isomap/SwissRoll/Swiss_Roll_a20b1_9_Isomap_phi.jpg width="125" height="189"> |
 | Spectral    | <img src =aspect-ratio-plots/Spectral-megaman/SwissRoll/Swiss_Roll_a8b6_Spectral_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Spectral-megaman/SwissRoll/Swiss_Roll_a10b4_Spectral_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Spectral-megaman/SwissRoll/Swiss_Roll_a12b3_8_Spectral_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Spectral-megaman/SwissRoll/Swiss_Roll_a8b1_9_Spectral_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Spectral-megaman/SwissRoll/Swiss_Roll_a10b1_9_Spectral_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Spectral-megaman/SwissRoll/Swiss_Roll_a16b1_9_Spectral_phi.jpg width="125" height="189"> | <img src =aspect-ratio-plots/Spectral-megaman/SwissRoll/Swiss_Roll_a20b1_9_Spectral_phi.jpg width="125" height="189"> |
@@ -68,13 +68,13 @@ A swiss roll is just a rectangle rolled up. So, the embedding algorithms should 
 
 *The best single plot for different aspect ratio*
 
-| ML algo | 8/6         | 10/4       | 12/3.8 | 8/1.9 | 10/1.9 | 16/1.9 | 20/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |
 | UMAP    | <img src =https://user-images.githubusercontent.com/81238710/190962239-ba4b96ec-5b65-4a84-a8f3-f70b3d46bde5.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962241-9b9ee4ce-ba3a-4327-8d0c-1f4099e9de89.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962244-b710a3aa-053f-4af2-8d58-f2256d54100d.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962238-03541129-ef57-4fab-944e-b8c14b988e90.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962240-619ccf87-f876-414f-9af2-4d81f600c4f5.jpeg width="125" height="189"> |  |  |
 
 **Variable Density**
 
-| ML algo | 8/6         | 10/4       | 12/3.8 | 8/1.9 | 10/1.9 | 16/1.9 | 20/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |
 | UMAP    | <img src =https://user-images.githubusercontent.com/81238710/190932516-a07d940d-90bb-4a37-bc8c-39c4fa318eb5.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190932523-c81f77bf-15c1-4996-b354-0f9c9d8e3d49.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190932526-1d658138-d178-466b-b678-7b04aa244222.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190932506-7a37bd1d-27c8-4700-ab6b-0df0b6b6936e.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190932519-0984ba8e-3e37-49fc-8da0-aa0d0be19c23.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190932528-8d56799a-bbd4-4bd2-8323-f852403ae94c.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190932539-cd005b07-7b2a-4ce4-a52b-c86a6bc1f0a5.jpeg width="125" height="189"> |
 
@@ -83,7 +83,7 @@ Rectangle with hole
 
 **Uniform Density**
 
-| ML algo | 4/3         | 5/2       | 6/1.9 | 8/1.9 | 10/1.9 | 16/1.9 | 20/1.9 | 30/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 | 15.79 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |    :----:    | 
 | Isomap     | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a4b3_Isomap_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a5b2_Isomap_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a6b1_9_Isomap_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a8b1_9_Isomap_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a10b1_9_Isomap_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a16b1_9_Isomap_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a20b1_9_Isomap_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Isomap/RectangleHole/Rectangle_hole_a30b1_9_Isomap_x.jpg width="111" height="168"> |
 | Spectral     | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a4b3_Spectral_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a5b2_Spectral_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a6b1_9_Spectral_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a8b1_9_Spectral_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a10b1_9_Spectral_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a16b1_9_Spectral_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a20b1_9_Spectral_x.jpg width="111" height="168"> | <img src = aspect-ratio-plots/Spectral-megaman/RectangleHole/Rectangle_hole_a30b1_9_Spectral_x.jpg width="111" height="168"> |
@@ -92,7 +92,7 @@ Rectangle with hole
 
 *The best single plot for different aspect ratio*
 
-| ML algo | 4/3         | 5/2       | 6/1.9 | 8/1.9 | 10/1.9 | 16/1.9 | 20/1.9 | 30/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 | 15.79 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |    :----:    | 
 | UMAP    | <img src = https://user-images.githubusercontent.com/81238710/190962576-5093604c-3e4c-4ad5-a78e-59d1bd10b0ba.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962577-24613454-b43d-489a-b8bd-85d779bfe297.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962578-8dba2f01-3077-4e2b-b0e8-78f192dde5a6.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962579-43019d04-e61a-4027-961d-a69d7bf9c138.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962580-f4000ab3-7f66-4974-8343-8e86405b7347.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962582-d49c09be-abed-43ab-93c1-076e17d818fb.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962586-157a127b-d72e-46bf-b3a1-251c7c844e0e.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962587-19b65f01-aef4-4186-af6a-6483e03ddc3b.jpeg width="111" height="168"> |
 
@@ -100,7 +100,7 @@ Rectangle with hole
 Torus
 -----
 
-| ML algo | 4/3         | 5/2       | 6/1.9 | 8/1.9 | 10/1.9 | 16/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |
 | Isomap     | <img src = aspect-ratio-plots/Isomap/Torus/Torus_a4b3_Isomap_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Isomap/Torus/Torus_a5b2_Isomap_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Isomap/Torus/Torus_a6b1_9_Isomap_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Isomap/Torus/Torus_a8b1_9_Isomap_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Isomap/Torus/Torus_a10b1_9_Isomap_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Isomap/Torus/Torus_a16b1_9_Isomap_z.jpg width="142" height="150"> | 
 | Spectral     | <img src = aspect-ratio-plots/Spectral-megaman/Torus/Torus_a4b3_Spectral_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Spectral-megaman/Torus/Torus_a5b2_Spectral_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Spectral-megaman/Torus/Torus_a6b1_9_Spectral_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Spectral-megaman/Torus/Torus_a8b1_9_Spectral_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Spectral-megaman/Torus/Torus_a10b1_9_Spectral_z.jpg width="142" height="150"> | <img src = aspect-ratio-plots/Spectral-megaman/Torus/Torus_a16b1_9_Spectral_z.jpg width="142" height="150"> | 
@@ -109,7 +109,7 @@ Torus
 
 *The best single plot for different aspect ratio*
 
-| ML algo | 4/3         | 5/2       | 6/1.9 | 8/1.9 | 10/1.9 | 16/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |
 | UMAP    | <img src = https://user-images.githubusercontent.com/81238710/190962979-c6568816-e574-42ad-b8eb-9564c66afad3.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190962983-37b2e8ef-dc1b-4bb6-b5f8-2218c6769e66.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190962985-39688127-a1fa-45fa-bd8c-fb8343d4f8bb.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190962986-f4e05eb9-b00e-4e55-b065-561680dd0a2d.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190962989-d1f6081f-98ff-4064-881b-360bebcb8ba5.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190962990-b72fb3ae-a058-4e87-bae1-78f650581d58.jpeg width="142" height="150"> |
 
@@ -118,7 +118,7 @@ Torus
 
 **Variable Density**
 
-| ML algo | 4/3         | 5/2       | 6/1.9 | 8/1.9 | 10/1.9 | 16/1.9 |
+| ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |
 | UMAP    | <img src = https://user-images.githubusercontent.com/81238710/190932642-a5d50246-10a8-4843-8faa-524f2015c18d.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190932643-8c622a2c-f80b-41b2-a052-f704ec550d09.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190932644-b6ade052-e47c-4ddd-b2ab-ad7f6ddb2956.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190932645-b2acf0a9-86ee-4cb9-96e2-e672a4f299d7.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190932646-e09da5dd-a387-4a05-8bc1-3bd1f6d3b35a.jpeg width="142" height="150"> | <img src = https://user-images.githubusercontent.com/81238710/190932647-3c2d1f16-35d4-4a24-a1d3-6ce8e03d4326.jpeg width="142" height="150"> |
 
