@@ -1,5 +1,10 @@
-The effect of manifold aspect ratio
-=====================================
+The effect of manifold aspect ratio: seeing "horseshoes" everywhere
+====================================================================
+
+<img width="700" height="200" alt="galaxy spectra v0, v1" src="https://other-figures/galaxy_1_2.png">
+
+<img width="700" height="200" alt="1" src="other-figures/umap_mindist_comp.png">
+
 
 What is aspect ratio? 
 ---------------------
