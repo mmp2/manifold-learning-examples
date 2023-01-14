@@ -1,16 +1,21 @@
 The effect of manifold aspect ratio: seeing "horseshoes" everywhere
 ====================================================================
 
-<img width="700" height="200" alt="galaxy spectra v0, v1" src="https://other-figures/galaxy_1_2.png">
+Below is an embedding of a real data set, spectra of galaxies in $D=3750$ dimensions [cite], and embedded by [cite] with DiffusionMaps, into $m=2$ dimensions. Next to it is an embedding of a synthetic data set, a rectangle with length $7\times$ width by UMAP. This paper presents an embedding of the UCI Congressional voting data $D=52$ in $m=2$ dimensions with an algorithm called *Multi-Dimensional Scaling (MDS)*. All these embeddings look like horseshoes, but for the last 2 cases *we know* that there is no horseshoe in the data (the congressional data is approximately one-dimensional, with the congressmen ordered by degree of partisanship, plus significant noise). Thus the horseshoe  is an *artefact* of the algorithm used. What is causing it?
 
-<img width="700" height="200" alt="1" src="other-figures/umap_mindist_comp.png">
+<img width="200" height="200" alt="galaxy spectra v0, v1, with horseshoe" src="other-figures/galaxy_1_2.png">
 
+
+<img width="200" height="200" alt="rectangle 7 x 1, horseshoe and clusters " src="other-figures/umap_mindist_comp.png">
+
+Fortunately, horseshoes are easily recognized. Below we show the simple fix, for a more sophisticated algorithm look [here]
+<img width="200" height="200" alt="galaxy spectra v0, v2, no horseshoe" src="other-figures/galaxy_1_3.png">
+
+<img width="200" height="200" alt="rectangle 7 x 1, no horseshoe" src="other-figures/umap_mindist_comp.png">
 
 What is aspect ratio? 
 ---------------------
-Below we see two examples of rectangles with different aspect ratios (4/3 for the left rectangle, and 8/1.9=4.21 for the right rectangle).
-
-
+Below we see two examples of rectangles with different *aspect ratios*. For the left rectangle, the aspect ratio $a=4/3$, representing its length over  and  for the right rectangle it is $a=8/1.9=4.21$ (we avoid choosing aspect ratios that are integers). 
 
 <img width="700" height="200" alt="1" src="https://user-images.githubusercontent.com/91905313/187146916-762d03f4-e78e-4be8-92e3-5ad79cc5a771.png">
 
@@ -28,7 +33,7 @@ Two Tori:
 
 <img width="700" height="300" alt="截屏2022-08-29 15 35 52" src="https://user-images.githubusercontent.com/91905313/187148724-467b6638-8f40-42da-8e77-dbb4e8ee5d9d.png">
 
-These manifolds all have *intrinsic dimension* $d=2$, because they are obtained by a transformation of a rectangle. Even though they are 2 dimensional manifold, the torus and swiss roll live in $m=3$ coordinates, and we call $m$ the *embedding dimension*. Of course not all manifolds are obtained from rectangles. Qualitatively, we think of the aspect ratio of a manifold as the aspect ratio of the data, after the manifold is "unfolded" in $d$ dimensions. 
+These manifolds all have *intrinsic dimension* $d=2$, because they are obtained by a transformation of a rectangle, which is itself a 2 dimensional manifold. Even though they are 2 dimensional manifold, the torus and swiss roll live in $m=3$ coordinates, and we call $m$ the *embedding dimension*. Of course not all manifolds are obtained from rectangles. Qualitatively, we think of the aspect ratio of a manifold as the aspect ratio of the data, after the manifold is "unfolded" in $d$ dimensions. 
 
 Most real data is not generated from rectangles, but most real data, when unfolded, has aspect ratio $>2$, in other words, not close to 1. The following examples illustrate how this affects the embeddings produced by different embedding algorithms. 
 
@@ -36,12 +41,14 @@ Before embarking on the examples, the readers are invited to take a detour deali
 
 *todo: a section on what is a good embedding. continuous map with continuous inverse, smooth map with smooth inverse. with examples*.
 
-*?? a table with links to subsets of results*
+*a table with links to subsets of results*
 
 Rectangle
 ---------
 
-The rectangle is the simplest possible manifold. The embedding algorithm will map _input data_  $(x_1,x_2)$ sampled from rectangles to points in $m=2$ with _embedding coordinates_ denoted $(v_0,v_1)$. The $v$ notation for embedding coordinates is motivated by the fact that most embedding algorithms use the eigenvectors of a matrix as embedding coordinates (Isomap, SpectralEmbedding, LLE). The UMAP algorithm starts with coordinates obtained by eigenvectors, which are then post-processed; t-SNE is the only method that does not use eigendecomposition. 
+The rectangle is the simplest manifold example. The embedding algorithm will map _input data_  $(x_1,x_2)$ sampled from rectangles to points in $m=2$ with _embedding coordinates_ denoted $(v_0,v_1)$. In other words, we aren't even trying to "reduce dimension", as the data is already "embedded" in 2D. But the algorithms do not know it, and we will have the opportunity to observe their behavior.
+
+The $v$ notation for embedding coordinates is motivated by the fact that most embedding algorithms use the eigenvectors of a matrix as embedding coordinates (Isomap, SpectralEmbedding, LLE). The UMAP algorithm starts with coordinates obtained by eigenvectors, which are then post-processed; t-SNE is the only method that does not use eigendecomposition. 
 
 **Uniform Density**
 
