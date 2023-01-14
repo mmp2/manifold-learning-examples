@@ -1,5 +1,29 @@
 # manifold-learning-examples
-### This repo is a group project regarding the examples of different implementations of manifold learning and the study of the dependence of manifold learning algorithms on parameters
+### Welcome! 
+
+Manifold Learning algorithms -- also called Embedding algorithms -- can help us interpret data with many dimensions (such as a cloud of word embeddings or of configurations of a molecule) by mapping it to 2D or to 3D where we can **see** it. But is what we are seeing the real shape of the data? Almost always, ML algorithms distort the shape. Sometimes the distortions are unimportant, but sometimes they can make us see clusters, "arms", holes, and "horseshoes" (what we will call *artefacts*) that are not properties of the data, but just effects of the algorithm and of how we used it. This project will illustrate some of the most common effects you will encounter, as you start using Embedding algorithms for your  real data. We chose simple artificial examples as the most common effects wi 
+
+This repository and project exemplify the behavior of different *Manifold Learning (ML)* algorithms on data and their dependence on parameters. 
+
+
+## What you will find on this site
+
+* a series of short articles illustrating significant but less widely known counterintuitive behaviors of manifold learning algorithms. Most of these effects are predictable or documented theoretically, and we include (light) references to the main sources. 
+  * aspect-ratio.md  Most real (manifold) data  extends more in one direction than in others, that is, it looks more like elongated strips than as discs or blobs. This can have unexpected drastic consequences on some ML algorithms, when they are used naively. We demonstrate both what can happen, how the problem is detected by simple inspecttion and a simple way to fix it.
+  * TBW For most ML algorithms, the way we sample the data affects the algorithm's output. In other words, what we see is not just _the shape_ of the manifold, but a combination of the shape and the _density_ of the data on the manifold, that can vary by algorithm and by the parameters used. 
+  * t-SNE is a very popular algorithm for visualizing high-dimensional data in 2D and 3D. However, care must be taken, as sometimes the features we see do not exist in the original data. 
+
+* the python code used to generate the examples. Most of the examples are based on sk-learn; for spectral_embedding (aka the DiffusionMaps / LaplacianEigenmaps algorithm) the megaman code is used; for UMAP and t-SNE we used the code provided by the authors. Additionally, we occasionally share our experience in installing/running these codes. 
+  * generating samples from simple synthetic manifolds (rectangle, rectangle with a hole, swiss roll=rolled up rectangle, 3D rectangle, circle, torus); in these examples, the samples are distributed nearly uniformly [more details TBW] 
+  * generating samples from the same manifolds as above, but in a highly non-uniform manner (that can be controlled). 
+  * generating informative plots of the algorithms' output
+  * instructions on how to install megaman on windows
+
+* the plots used in the articles and many more
+  
+
+
+### Stuff to be moved to todo-list.md
 
 Next meeting: Tuesday 9/13 3:30pm (maybe also 9/6 ?)
 
