@@ -1,15 +1,13 @@
 The effect of manifold aspect ratio: seeing "horseshoes" everywhere
 ====================================================================
 
-Below is an embedding of a real data set, spectra of galaxies in $D=3750$ dimensions (described by https://arxiv.org/abs/1603.02763 and https://www.jmlr.org/papers/v17/16-109.html), and embedded by https://proceedings.neurips.cc/paper/2019/hash/6a10bbd480e4c5573d8f3af73ae0454b-Abstract.html with DiffusionMaps, into $m=2$ dimensions. Next to it is an embedding of a synthetic data set, a rectangle with length $7\times$ width by UMAP. This paper <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-2/issue-3/Horseshoes-in-multidimensional-scaling-and-local-kernel-methods/10.1214/08-AOAS165.full">Horeshoes in multidimensional scaling and local kernel methods</a> presents an embedding of the <a href="https://archive.ics.uci.edu/ml/datasets/Congressional+Voting+Records">UCI Congressional voting records data</a> $D=52$ in $m=2$ dimensions with an algorithm called *Multi-Dimensional Scaling (MDS)*. All these embeddings look like horseshoes, but for the last 2 cases *we know* that there is no horseshoe in the data (the congressional data is approximately one-dimensional, with the congressmen ordered by degree of partisanship, plus significant noise). Thus the horseshoe  is an *artefact* of the algorithm used. What is causing it?
+Below is an embedding of a real data set, spectra of galaxies in $D=3750$ dimensions (described <a href="https://arxiv.org/abs/1603.02763">here</a> or <a href="https://www.jmlr.org/papers/v17/16-109.html">here</a>), and embedded by <a href="https://proceedings.neurips.cc/paper/2019/hash/6a10bbd480e4c5573d8f3af73ae0454b-Abstract.html">this paper</a> with DiffusionMaps, into $m=2$ dimensions. Next to it is an embedding of a synthetic data set, a rectangle with length $7\times$ width by UMAP. This paper <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-2/issue-3/Horseshoes-in-multidimensional-scaling-and-local-kernel-methods/10.1214/08-AOAS165.full">Horeshoes in multidimensional scaling and local kernel methods</a> presents an embedding of the <a href="https://archive.ics.uci.edu/ml/datasets/Congressional+Voting+Records">UCI Congressional voting records data</a> $D=16$ in $m=2$ dimensions with an algorithm called *Multi-Dimensional Scaling (MDS)*. All these embeddings look like horseshoes, but for the last 2 cases *we know* that there is no horseshoe in the data (the congressional data is approximately one-dimensional, with the congressmen ordered by degree of partisanship, plus significant noise). Thus the horseshoe  is an *artefact* of the algorithm used. What is causing it?
 
-<img width="200" height="200" alt="galaxy spectra v0, v1, with horseshoe" src="other-figures/galaxy_1_2.png">
-<img width="200" height="200" alt="rectangle 7 x 1, horseshoe and clusters " src="other-figures/umap_mindist_comp.png">
+<img width="200" height="200" alt="galaxy spectra v0, v1, with horseshoe" src="other-figures/galaxy_1_2.png"> <img width="200" height="200" alt="rectangle 7 x 1, horseshoe and clusters " src="other-figures/umap_mindist_comp-crop1.png">
 
 Fortunately, horseshoes are easily recognized. Below we show the simple fix, for a more sophisticated algorithm look at <a href="https://proceedings.neurips.cc/paper/2019/hash/6a10bbd480e4c5573d8f3af73ae0454b-Abstract.html">Selecting the independent coordinates of manifolds with large aspect ratios </a>.
 
-<img width="200" height="200" alt="galaxy spectra v0, v2, no horseshoe" src="other-figures/galaxy_1_3.png">
-<img width="200" height="200" alt="rectangle 7 x 1, no horseshoe" src="other-figures/umap_mindist_comp.png">
+<img width="200" height="200" alt="galaxy spectra v0, v2, no horseshoe" src="other-figures/galaxy_1_3.png"> <img width="200" height="200" alt="rectangle 7 x 1, no horseshoe" src="other-figures/umap_mindist_comp-crop2.png">
 
 What is aspect ratio? 
 ---------------------
@@ -37,7 +35,7 @@ Most real data is not generated from rectangles, but most real data, when unfold
 
 Before embarking on the examples, the readers are invited to take a detour dealing with the question: what is a good embedding? And what isn't?
 
-*todo: a section on what is a good embedding. continuous map with continuous inverse, smooth map with smooth inverse. with examples*.
+
 
 *a table with links to subsets of results*
 
@@ -57,7 +55,7 @@ The $v$ notation for embedding coordinates is motivated by the fact that most em
 | LLE     | <img src = https://user-images.githubusercontent.com/91905313/187150694-030d9bb0-2c30-46a1-ad9a-ef0f2053c9f6.jpg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/91905313/187153776-e81d614d-4418-4776-a30f-57e77240d274.jpg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/91905313/187154086-c5930aae-f33e-49ff-9638-0c57a2ede923.jpg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/91905313/187157794-6c72f0c6-6f1f-4c65-9e3f-8bc38de02bd0.jpg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/91905313/187157870-b4d4f810-43cf-422c-a5e5-45b0d2f94086.jpg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/91905313/187157917-a5a05caa-2dd6-4df9-b434-9da2ead4d2d9.jpg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/91905313/187158320-e6ce2247-1eaa-45a6-8bf2-555327ff7be1.jpg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/91905313/187158409-4fa7a8c7-ba82-44c8-8563-42bb9788e842.jpg width="111" height="168"> | 
 | UMAP    | <img src = https://user-images.githubusercontent.com/81238710/187545635-a57c1574-24b4-42b1-9358-16e1f22a7862.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/187545732-4950349b-9ca5-4620-83dc-7003d9862efb.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/187545792-af037ace-e64c-4372-a30b-0c59a8b5f933.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/187545824-4a6271db-73b4-4f5c-9a79-140b4887bb91.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/187545910-91cb2a0b-a135-4cce-8078-3145881d6919.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/187545953-b5945b47-414f-40aa-b8c1-e2b1af156908.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/187545999-2680c19c-8a0b-445b-8b16-8a37a87f09a6.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/187546037-0c5cb4f7-a95c-4810-91a1-a65e21df696d.jpeg width="111" height="168"> |
 
-*The best single plot for different aspect ratio*
+*The best single plot for different aspect ratio* **TODO: add a second row with the eigenvectors chosen in each case**
 
 | ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 | 15.79 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |    :----:    | 
@@ -90,6 +88,7 @@ A swiss roll is just a rectangle rolled up. So, the embedding algorithms should 
 
 Rectangle with hole
 -------------------
+Because ML algorithms are "myopic", and only see small neighborhoods around each point, creating a hole in the data complicates their work. Some of the challenges are minor; for example, there are multiple ways to map the data that are approximately the same -- this is what causes Isomap to "round the hole". This effect will disappear gradually with more densely sampled data. Other challenges are more serious: a long rectangle with a hole is in fact *the union of 4 long rectangles*! 
 
 **Uniform Density**
 
