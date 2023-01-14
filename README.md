@@ -1,7 +1,8 @@
 # manifold-learning-examples
 ### Welcome! 
 
-Manifold Learning algorithms -- also called Embedding algorithms -- can help us interpret data with many dimensions (such as a cloud of word embeddings or of configurations of a molecule) by mapping it to 2D or to 3D where we can **see** it. But is what we are seeing the real shape of the data? Almost always, ML algorithms distort the shape. Sometimes the distortions are unimportant, but sometimes they can make us see clusters, "arms", holes, and "horseshoes" (what we will call *artefacts*) that are not properties of the data, but just effects of the algorithm and of how we used it. This project will illustrate some of the most common effects you will encounter, as you start using Embedding algorithms for your  real data. We chose simple artificial examples as the most common effects wi 
+Manifold Learning algorithms -- also called Embedding algorithms -- can help us interpret data with many dimensions (such as a cloud of word embeddings or of configurations of a molecule) by mapping it to 2D or to 3D where we can **see** it. But is what we are seeing the real shape of the data? Almost always, ML algorithms distort the shape. Sometimes the distortions are unimportant, but sometimes they can make us see clusters, "arms", holes, and "horseshoes" (what we will call *artefacts*) that are not properties of the data, but just effects of the algorithm and of how we used it. This project will illustrate some of the most common effects you will encounter, as you start using Embedding algorithms for your  real data. We chose simple artificial examples as the most common effects will appear with the simplest data. These effects are not
+These artefacts are *not* symptoms of "too little data" -- most of them persist even when the data size _n_ goes to infinity!
 
 This repository and project exemplify the behavior of different *Manifold Learning (ML)* algorithms on data and their dependence on parameters. 
 
