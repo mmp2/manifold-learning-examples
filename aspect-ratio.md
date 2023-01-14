@@ -1,16 +1,14 @@
 The effect of manifold aspect ratio: seeing "horseshoes" everywhere
 ====================================================================
 
-Below is an embedding of a real data set, spectra of galaxies in $D=3750$ dimensions [cite], and embedded by [cite] with DiffusionMaps, into $m=2$ dimensions. Next to it is an embedding of a synthetic data set, a rectangle with length $7\times$ width by UMAP. This paper presents an embedding of the UCI Congressional voting data $D=52$ in $m=2$ dimensions with an algorithm called *Multi-Dimensional Scaling (MDS)*. All these embeddings look like horseshoes, but for the last 2 cases *we know* that there is no horseshoe in the data (the congressional data is approximately one-dimensional, with the congressmen ordered by degree of partisanship, plus significant noise). Thus the horseshoe  is an *artefact* of the algorithm used. What is causing it?
+Below is an embedding of a real data set, spectra of galaxies in $D=3750$ dimensions (described by https://arxiv.org/abs/1603.02763 and https://www.jmlr.org/papers/v17/16-109.html), and embedded by https://proceedings.neurips.cc/paper/2019/hash/6a10bbd480e4c5573d8f3af73ae0454b-Abstract.html with DiffusionMaps, into $m=2$ dimensions. Next to it is an embedding of a synthetic data set, a rectangle with length $7\times$ width by UMAP. This paper <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-2/issue-3/Horseshoes-in-multidimensional-scaling-and-local-kernel-methods/10.1214/08-AOAS165.full">Horeshoes in multidimensional scaling and local kernel methods</a> presents an embedding of the <a href="https://archive.ics.uci.edu/ml/datasets/Congressional+Voting+Records">UCI Congressional voting records data</a> $D=52$ in $m=2$ dimensions with an algorithm called *Multi-Dimensional Scaling (MDS)*. All these embeddings look like horseshoes, but for the last 2 cases *we know* that there is no horseshoe in the data (the congressional data is approximately one-dimensional, with the congressmen ordered by degree of partisanship, plus significant noise). Thus the horseshoe  is an *artefact* of the algorithm used. What is causing it?
 
 <img width="200" height="200" alt="galaxy spectra v0, v1, with horseshoe" src="other-figures/galaxy_1_2.png">
-
-
 <img width="200" height="200" alt="rectangle 7 x 1, horseshoe and clusters " src="other-figures/umap_mindist_comp.png">
 
-Fortunately, horseshoes are easily recognized. Below we show the simple fix, for a more sophisticated algorithm look [here]
-<img width="200" height="200" alt="galaxy spectra v0, v2, no horseshoe" src="other-figures/galaxy_1_3.png">
+Fortunately, horseshoes are easily recognized. Below we show the simple fix, for a more sophisticated algorithm look at <a href="https://proceedings.neurips.cc/paper/2019/hash/6a10bbd480e4c5573d8f3af73ae0454b-Abstract.html">Selecting the independent coordinates of manifolds with large aspect ratios </a>.
 
+<img width="200" height="200" alt="galaxy spectra v0, v2, no horseshoe" src="other-figures/galaxy_1_3.png">
 <img width="200" height="200" alt="rectangle 7 x 1, no horseshoe" src="other-figures/umap_mindist_comp.png">
 
 What is aspect ratio? 
@@ -145,7 +143,7 @@ A "cute" manifold
 An example with real data (maybe)
 ---------------------------------
 
-This paper https://arxiv.org/pdf/1907.01651.pdf discusses the problems in the case of Spectral Embedding and proposes a solution. 
+<a href="https://proceedings.neurips.cc/paper/2019/hash/6a10bbd480e4c5573d8f3af73ae0454b-Abstract.html">Selecting the independent coordinates of manifolds with large aspect ratios </a> discusses the problems in the case of Spectral Embedding (the authors have experimented with other algorithms such as LTSA and UMAP as well, observing similar behaviors) and proposes a solution, while <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-2/issue-3/Horseshoes-in-multidimensional-scaling-and-local-kernel-methods/10.1214/08-AOAS165.full">Horeshoes in multidimensional scaling and local kernel methods</a> does the same for MDS. 
 
 
 
