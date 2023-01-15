@@ -2,10 +2,23 @@
 
 Plan for next meeting: 
 * finalize Readme.md in real time
+  * links
+  * contributors - links, etc
+  * license and citations MMP
+  
 * aspect_ratio.md -- what is left? finalize in real time
+  * umap -- stability -- and are the best embeddings really good?
+  * LLE - stability??
+  * do we include t-sne?
+  * to move variable density 
+  * nicer citations
+  * add pictures to explanation part
+  * credits and authors
+  * 
 * variable_density.md  who/what
 * contributions; credit -- preamble in all code; 
 * code organization
+
 
 List of Problems
 * the Aspect Ratio Problem: choosing independent eigenvectors
