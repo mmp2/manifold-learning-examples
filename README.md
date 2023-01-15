@@ -1,4 +1,4 @@
-## Welcome to the Manifold Examples project! 
+## Welcome to the Manifold Learning Examples project! 
 
 **Manifold Learning (ML) algorithms** -- also called **Embedding algorithms** -- can help us interpret data with many dimensions (such as a cloud of word embeddings or of configurations of a molecule) by mapping it to 2D or to 3D where **we can see** it. But is what we are seeing the **real shape** of the data? Almost always, ML algorithms *distort the shape*. Sometimes the distortions are unimportant, but sometimes they can make us see *clusters, "arms", holes, and "horseshoes"* (what we will call **artefacts**) that are not properties of the data, but just effects of the algorithm and of how we used it. 
 
