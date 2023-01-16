@@ -14,22 +14,20 @@ Fortunately, horseshoes are easily recognized. Below we show the simple fix, for
 What is aspect ratio? 
 ---------------------
 Below we see two examples of rectangles with different *aspect ratios*. For the left rectangle, the aspect ratio $a=4/3$, representing its length over  and  for the right rectangle it is $a=8/1.9=4.21$ (we avoid choosing aspect ratios that are integers). 
-
-<img width="700" height="200" alt="1" src="https://user-images.githubusercontent.com/91905313/187146916-762d03f4-e78e-4be8-92e3-5ad79cc5a771.png">
+<img width="700" height="200" alt="截屏2023-01-16 14 13 26" src="https://user-images.githubusercontent.com/91905313/212610533-68ccd0c9-7944-4fe1-bcbe-532bb9b0b889.png">
 
 Below we see data sampled uniformly from these 2 rectangles.
-
-<img width="700" height="200" alt="2" src="https://user-images.githubusercontent.com/91905313/187147225-efeb300f-ab0d-4141-b68a-97218dfc74bb.png">
+<img width="700" height="200" alt="截屏2023-01-16 14 14 59" src="https://user-images.githubusercontent.com/91905313/212610635-dc128dd0-dde8-4044-aacd-65be9e9de188.png">
 
 Aspect ratio can be defined for other simple manifolds, that can be obtained by "rolling up" these rectangles. 
 
-Two Swiss Rolls. The aspect ratio is inherited from the original rectangles.
+Two Swiss Rolls. The aspect ratio is inherited from the original rectangles (left $a=4/3$, right $a=8/1.9=4.21$ ).
 
-<img width="700"  height="300" alt="3" src="https://user-images.githubusercontent.com/91905313/187147263-02e73146-6fe8-4ab4-ab79-26c45ff1e14d.png">
+<img width="600"  height="250" alt="截屏2023-01-16 14 19 37" src="https://user-images.githubusercontent.com/91905313/212611133-39188188-ee2b-4559-accd-d7dd84e2c7aa.png">
 
-Two Tori. A torus is a rectangle that is first rolled up (and glued) into a tube, then rolled again to form a tubular ring. The aspect ratio is then the ratio of the original rectangle, equal to the ratio of the larger and smaller radii of the torus. 
+Two Tori. A torus is a rectangle that is first rolled up (and glued) into a tube, then rolled again to form a tubular ring. The aspect ratio is then the ratio of the original rectangle, equal to the ratio of the larger and smaller radii of the torus (left $R/r=4/3$, right $R/r=8/1.9=4.21$). 
 
-<img width="700" height="300" alt="截屏2022-08-29 15 35 52" src="https://user-images.githubusercontent.com/91905313/187148724-467b6638-8f40-42da-8e77-dbb4e8ee5d9d.png">
+<img width="600" height="200" alt="截屏2023-01-16 14 19 46" src="https://user-images.githubusercontent.com/91905313/212611596-c14a8121-f96f-4025-8e4e-3ffb9032e005.png">
 
 These manifolds all have *intrinsic dimension* $d=2$, because they are obtained by a transformation of a rectangle, which is itself a 2 dimensional manifold. Even though they are 2 dimensional manifold, the torus and swiss roll live in $m=3$ coordinates, and we call $m$ the *embedding dimension*. Of course not all manifolds are obtained from rectangles. Qualitatively, we think of the aspect ratio of a manifold as the aspect ratio of the data, after the manifold is "unfolded" in $d$ dimensions. 
 
