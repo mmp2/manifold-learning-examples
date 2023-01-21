@@ -38,18 +38,6 @@ We now embed a disk of radius 1 using various $k$ and $n$ values. As before, whe
 
 Note that here the number of neighbors $k$ is similar to other embedding algorithms.
 
-
-Perplexity and neighborhoods radius
-------------------------------------
-t-SNE takes a "statistical" or shall we say "geometric" parameter, the perplexity, and a number of other parameters that control the iterative descent algorithm that estimates the embedding. In our experiments, we focus solely on perplexity, and we run the algorithm with the default parameters in sk-learn and a sufficient number of iterations. 
-
-But what is the perplexity? It turn out that the t-SNE algorithm chooses for each point $k$ nearest neighbors (including the point itself), with 
-$k=3\times perplexity+1$. Hence, the perplexity is proportional to the number of neighbors (other than the point itself). Indirectly, the number of neighbors affects the neighborhood *scale*. For any additional neighbor, the radius of the ball that contains all neighbors grows. If the data was sampled uniformly, this radius would be approximately the same for every data point. When the samples are not uniform, then the neighborhood radius is smaller where the points are dense, and larger where the points are sparse, if $k$ is held the same. [merge these paragraphs]
-
-But the t-sne authors recommend a parameter called *perplexity*, which is $90\times k$. Moreover, papers like [] suggest $k\propto n$. [Something about run time in this case] Here are the experiments with the author's recommendation. [We believe that choosing larger $k$ indeed forces the algorithm to behave better for smaller sample sizes, but delaying the appearace of problems until $n$ is much larger]
-
-[ Figure with k larger ]
-
 A featureless graph
 --------------------
 
@@ -73,6 +61,16 @@ In most embedding algorithms, the number of neighbors $k$ is a vanishingly small
  [MK: to rerun k vs n columns k/n = 0.2 or 0.1 and k/n = 0.01 --because it shows features. save results. save run time:). plot run time vs n, 2 curves for the 2 k/n values, on the same plot. may need to make y axis logarithmic]
  
 
+Perplexity and neighborhoods radius
+------------------------------------
+t-SNE takes a "statistical" or shall we say "geometric" parameter, the perplexity, and a number of other parameters that control the iterative descent algorithm that estimates the embedding. In our experiments, we focus solely on perplexity, and we run the algorithm with the default parameters in sk-learn and a sufficient number of iterations. 
+
+But what is the perplexity? It turn out that the t-SNE algorithm chooses for each point $k$ nearest neighbors (including the point itself), with 
+$k=3\times perplexity+1$. Hence, the perplexity is proportional to the number of neighbors (other than the point itself). Indirectly, the number of neighbors affects the neighborhood *scale*. For any additional neighbor, the radius of the ball that contains all neighbors grows. If the data was sampled uniformly, this radius would be approximately the same for every data point. When the samples are not uniform, then the neighborhood radius is smaller where the points are dense, and larger where the points are sparse, if $k$ is held the same. [merge these paragraphs]
+
+But the t-sne authors recommend a parameter called *perplexity*, which is $90\times k$. Moreover, papers like [] suggest $k\propto n$. [Something about run time in this case] Here are the experiments with the author's recommendation. [We believe that choosing larger $k$ indeed forces the algorithm to behave better for smaller sample sizes, but delaying the appearace of problems until $n$ is much larger]
+
+[ Figure with k larger ]
 
  
 So can we find any intuition on the choice of the perplexity (or equivalently of the $k$) parameter?
@@ -88,6 +86,6 @@ Many other artefact producing behavior was exemplified at
 https://distill.pub/2016/misread-tsne/
 
 t-sne stability and distortions
-================================
+--------------------------------
 
  
