@@ -32,12 +32,13 @@ def plot_one(disk):
 
 def plot_one_red(disk, bounds):
     fg, ax = plt.subplots(1, 1)
-    ax.plot(disk[:,0], disk[:,1], '.') # plot random points
-    ax.plot(bounds[:,0], bounds[:,1], 'r.') # plot random points
+    ax.scatter(disk[:,0], disk[:,1], s=3) # plot random points
+    ax.scatter(bounds[:,0], bounds[:,1], s=3, c='red') # plot random points
     ax.axis('equal')
     ax.grid(True)
     fg.canvas.draw()
-    plt.show()
+    fg.suptitle("Selected Boundary Points in the 2D Disk with n=10000")
+    plt.savefig("Selected Boundary Points of T-SNE.png")
 
 def plot(n_neighs, d2s):
     fg, ax = plt.subplots(len(n_neighs), len(d2s), figsize=(30, 30))
@@ -93,8 +94,7 @@ with open(result_txt, "w") as f:
             f.write(f"n={n}, k={k}, neigh_rad={neigh_rad}, ratio_k/n={k/n}, ratio_area={neigh_rad**2}")
             f.write("\n")
 
-
-disk = gen_disk(n, d1=2, d2=5)
-bound_points = bound_point(disk, 40)
-plot_one_red(disk, bound_points)
 """
+disk = gen_disk(n, d1=2, d2=5)
+bound_points = bound_point(disk, 20)
+#plot_one_red(disk, bound_points)
