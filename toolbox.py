@@ -16,7 +16,7 @@ def plot_3d_shape_single(datapoints, colors, title=None, figsize=(10, 10), marke
     """
     parameters
         "datapoints": Dataset used to draw the shape.
-        "colors": Dataset used to color the shape; can be None.
+        "colors": Dataset used to color the shape; can be None. For example, colors=originData[:, 0] means color by x.
         "title": Name of the shape; None as default value.
         "figsize": Size of plot, 10 * 10 as default value.
         "marker_size": Size of marker, 20 as default value.
@@ -65,7 +65,7 @@ def plot_3d_shape_all(datapoints, colors, title=None, figsize=(10, 20), marker_s
     """
     parameters
         "datapoints": Dataset used for plotting.
-        "colors": Dataset used to color the shape; can be None.
+        "colors": Dataset used to color the shape; can be None. For example, colors=originData[:, 0] means color by x.
         "title": Name of the shape; None as default value.
         "figsize": Size of plot, 10 * 20 as default value.
         "marker_size": Size of marker, 1 as default value.
