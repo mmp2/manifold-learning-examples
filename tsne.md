@@ -60,6 +60,16 @@ In most embedding algorithms, the number of neighbors $k$ is a vanishingly small
 
  [MK: to rerun k vs n columns k/n = 0.2 or 0.1 and k/n = 0.01 --because it shows features. save results. save run time:). plot run time vs n, 2 curves for the 2 k/n values, on the same plot. may need to make y axis logarithmic]
  
+ Plots:
+ 
+ ![image](https://user-images.githubusercontent.com/77368272/215254028-b75423a9-8e62-4e21-af30-d0ea21164d1c.png)
+ 
+Runtime:
+ ![image](https://user-images.githubusercontent.com/77368272/215253970-e7a6d369-43be-46d1-9dd6-e6cd9ef1279b.png)
+ 
+ Algorithm Cost:
+ ![image](https://user-images.githubusercontent.com/77368272/215254017-b374577c-5a72-4471-acc7-ad61733f7381.png)
+
 
 Perplexity and neighborhoods radius
 ------------------------------------
