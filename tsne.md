@@ -23,7 +23,12 @@ The research group is aware that the parameter choices may affect the algorithm,
 These are the embedding they obtain. Can you figure out how the original data looked like? The answer is [here] or scroll below. 
 
 [figure of d1=5, d2=2 data with no original data, no axes]
-![k_vs_R of T-SNE](https://user-images.githubusercontent.com/77368272/215298908-d3069cbd-f28a-45ba-bd40-c07211d4b19a.png)
+
+3d disk:
+![k_vs_n of_T-SNE_3D](https://user-images.githubusercontent.com/77368272/215299118-345a6dc7-da36-46fb-af3d-b3aa59764072.png)
+3d original:
+![3d_disk_original_notitle](https://user-images.githubusercontent.com/77368272/215299203-51fece04-3546-4058-84d4-81959042b4bd.png)
+![3d_disk_tsne_original](https://user-images.githubusercontent.com/77368272/215299264-118ede45-5ca4-4934-89ca-16d8ecf5a18d.png)
 
 
 From left to right, we see:  a circular blob with higher density in the center, clusters of various granularities, or a disk with a hole (that is, a ring). If these data were cells, we could hypothesise that they all behave the same way (the blob), that there are multiple groups with different behaviors (clusters), or that that the behavior varies continuously and cyclically (the ring). 
