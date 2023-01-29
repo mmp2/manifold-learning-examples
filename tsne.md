@@ -20,10 +20,8 @@ Here is a first example to illustrate the issues a practitioner may face with t-
 
 The research group is aware that the parameter choices may affect the algorithm, so they try many possible choices of perplexity. Perplexity is proportional to the number of neighbors $k$ of a data point, and the number of neigbors implicitly defines a radius of the neighborhood (more neighbors implies larger radius); note that the radius does not grow proportionally with $k$, but slower, e.g., approximately as $\sqrt{k}$ when for 2-dimensional data. 
 
-These are the embedding they obtain.
+These are the embeddings obtained.
 <img width="900" src="T-SNE/k_vs_R of T-SNE-1row.png">
-
-
 
 From left to right, we see:  a circular blob with higher density in the center, clusters of various granularities, or a disk with a hole (that is, a ring). If these data were cells, we could hypothesise that they all behave the same way (the blob), that there are multiple groups with different behaviors (clusters), or that that the behavior varies continuously and cyclically (the ring).  How to figure out how the original data looked like? 
 
@@ -33,21 +31,18 @@ On the other hand, by the recommendation of the algorithm authors and implemente
 
 [plot of true ring data]
 
-
-
 A featureless low dimensional data set
 ---------------------------------------
 We now embed a disk of radius 1 using various $k$ and $n$ values. As before, when $k$ changes, features appear and disappear in the data. The most remarkable fact is that t-SNE displays not just clusters, but also 1-dimensional *filaments* that do not exist in the data. 
 
-uniform disk (pick one from the 2 below (different sizes)):
-![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215299813-810bf6ab-9dd8-4bc2-8969-6dde5d4ec65f.png)
-
 ![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215301106-6425a699-a6ea-4f52-8f39-abec86754b72.png)
 
-Note that here the number of neighbors $k$ is similar to other embedding algorithms.
+Note that here the number of neighbors $k$ varies from low values, lower or similar to other embedding algorithms, to high values, that is, larger neighborhoods, as recommended for t-SNE. 
 
-The same disk is now deformed in 3D, like this.
-![3d_disk_original_notitle](https://user-images.githubusercontent.com/77368272/215299203-51fece04-3546-4058-84d4-81959042b4bd.png)
+It appears that more neighbors work better for t-SNE. However, requiring more neighbors can get an algorithm into problems, when the manifold is non-trivially curved. When the previous disk is deformed, neighborhoods become curved, and  their shape in 2D cannot be accurately reproduced. Thus t-SNE has a much harder time finding a good local minimum.
+
+<img width="300" src="T_SNE/3d_disk_original_notitle.png">
+
 ![3d_disk_tsne_original](https://user-images.githubusercontent.com/77368272/215299264-118ede45-5ca4-4934-89ca-16d8ecf5a18d.png)
 
 3d disk:
@@ -55,41 +50,36 @@ The same disk is now deformed in 3D, like this.
 
 A featureless graph
 --------------------
+This paper https://arxiv.org/abs/2102.13009 offers an analysis of t-SNE on structureless graphs, such as the random $k$-*regular* graph, and the *Erdos-Renyi*$(p)$ graph. 
 
-This paper https://arxiv.org/abs/2102.13009 offers an analysis of t-sne on structureless graphs, such as the random $k$-*regular* graph, and the *Erdos-Renyi*$(p)$ graph. 
+A *$k$-regular graph* is a graph where each node has exactly $k$ neighbors. This is exactly the situation of a t-SNE neighborhood graphs. However, in the *geometric* neighborhoods graphs above, there is high correlation between the neighbors of nearby nodes. In other words, if 2 points are near each other, they have more neighbors in common. In a *random* $k$-regular graph, 2 nodes that are neighbors are not more likely to have other neighbors in common. 
 
-A *$k$-regular graph* is a graph where each node has exactly $k$ neighbors. This is exactly the situation of a t-SNE neighborhood graphs. However, in the *geometric* neighborhoods graphs above, there is high correlation between the neighbors of nearby nodes. In other words, if 2 points are near each other, they have more neighbors in common. In a *random* $k$-regular graph, 2 nodes that are neighbors are not more likely to have other neighbors in common. An ER$(p)$ graph is a random graph in which each possible edge $(i,j)$ is present with probability $p\in (0,1)$. Hence the expected number of neighbors of an ER$(p)$ graph with $n$ nodes is $np=\bar{k}$.  Below we see how close the ER($p$) graph is to having exactly $\bar{k}$ neighbors pers node. 
+An *Erdos-Renyi* ER$(p)$ graph is a random graph in which each possible edge $(i,j)$ is present with probability $p\in (0,1)$. Hence the expected number of neighbors of an ER$(p)$ graph with $n$ nodes is $np=\bar{k}$.  Below we see how close the ER($p$) graph is to having exactly $\bar{k}$ neighbors pers node. 
 [plots: histograms of k for each p, fixed n]
-![T-SNE for K regular vs k](https://user-images.githubusercontent.com/77368272/215298855-8a68e17f-9be6-4356-a12a-60715df7f7a4.png)
 
 These simple to construct graphs are examples of "high-dimensional" data, i.e. of data that cannot be embedded in low dimensions without distortion. They are also featureless with very high probability, hence if their embedding shows anything different from a blob, that would be an artefact. Our experiments show that t-SNE does find blobs, but it still adds some features like *filaments* and even faint *clusters*.  
 
-[MK's figures of ER]
+Indeed, for the $k$-regular graphs, the results are featureless. When the number of neighbors $k$ increases, the embedding collapses in what is essentially a single point. 
 
+The results are more variable for the ER$(p)$ graph, and in fact in some cases we observe artefacts such as thin rings. 
 
-vs p:
 ![T-SNE for Erdos Renyi_vs p_large](https://user-images.githubusercontent.com/77368272/215298860-94954d01-181f-4790-a17c-27b86f80a6b3.png)
 
 vs k:
 ![T-SNE for Erdos Renyi_vs k](https://user-images.githubusercontent.com/77368272/215300127-ae822723-680c-4c2c-aa90-6fdc8f5829b0.png)
 
-
-As it turns out, for the ER graph and it's relative the $k$-regular graph, it is known what t-SNE will do for $n$ very large. This paper shows that t-SNE outputs a *ring*, and moreover that the ring becomes thinner when $n$ and $k$ increase, and their figures display rings appearing for $n\geq 40,000$. More precisely, for the rings to appear, $k\propto n$ and the ring width is $\propto (kn)^{-1/4}$. For smaller $k$,the embedding is featureless (as we can observe too). 
+For very large $n$, on these simple graphs, it is known what t-SNE will do. ![t-SNE, forceful colorings and Mean-Field limits](https://arxiv.org/abs/2102.13009) shows that t-SNE outputs a *ring*, and moreover that the ring becomes thinner when $n$ and $k$ increase.  Their figures display rings appearing for $n\geq 40,000$ (while the present simulations stop at $n=10,000)$. More precisely, for the rings to appear, $k\propto n$ and the ring width is $\propto (kn)^{-1/4}$. For smaller $k$,the embedding is featureless (as we can observe too). 
 
 The reason for this (now with actual proofs) is the same as the more intuitive explanation in [this FAQ](https://lvdmaaten.github.io/tsne/#faq): t-SNE "solves a problem known as the crowding problem", in other words, it works by trying to push points away from each other, against the "neighborhood ties". In a data set with clusters, the weaker ties between clusters will give. However, when there are no clusters, t-SNE will still be happier if it can break some ties. Note that the number of ties in a random graph grows like $pn^2$, but to break away a cluster you only need to break $\propto n$ ties. Hence, the larger $n$, the more neglijible will look the (wrongly) broken ties compared to all the (correctly) unbroken ties. 
 
 The run time
 -------------
-In most embedding algorithms, the number of neighbors $k$ is a vanishingly small fraction of $n$. Not so in t-SNE, where the author's recommendation as well as the analysis in [...] is to have $k/n$ approximately constant. Let's see what this means for the algorithm's run time, by looking at the dependence of the run time on $k$.
+In most embedding algorithms, the number of neighbors $k$ is a vanishingly small fraction of $n$. Not so in t-SNE, where the author's recommendation as well as the analysis above suggest that $k/n$ should be approximately constant (in other words, $k$ needs to grow proportionally with $n$). Let's see what this means for the algorithm's run time, by looking at the dependence of the run time on $k$.
 
- [MK: to rerun k vs n columns k/n = 0.2 or 0.1 and k/n = 0.01 --because it shows features. save results. save run time:). plot run time vs n, 2 curves for the 2 k/n values, on the same plot. may need to make y axis logarithmic]
+For this, we use the ring data.
+![k_vs_R of T-SNE](https://user-images.githubusercontent.com/5679461/215303791-e77e189a-0b5d-439a-9a34-49bb73b02384.png)
 
-
- Plots:
- 
- ![k_vs_R of T-SNE](https://user-images.githubusercontent.com/5679461/215303791-e77e189a-0b5d-439a-9a34-49bb73b02384.png)
-
- 
+-- to make a table with 2 columns. these figures need axes and labels!-- 
 Runtime:
  ![image](https://user-images.githubusercontent.com/77368272/215253970-e7a6d369-43be-46d1-9dd6-e6cd9ef1279b.png)
  
