@@ -38,9 +38,10 @@ Based on generic results on manifold learning from non-parameteric statistics, t
 On the other hand, by the recommendation of the algorithm authors and implementers, larger perplexity is better, hence we should believe the plots on the extreme right (the ring). Which is the correct answer in this case. 
 
 [plot of true ring data]
-uniform disk:
+uniform disk (pick one from the 2 below (different sizes)):
 ![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215299813-810bf6ab-9dd8-4bc2-8969-6dde5d4ec65f.png)
 
+![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215301106-6425a699-a6ea-4f52-8f39-abec86754b72.png)
 
 A featureless low dimensional data set
 ---------------------------------------
