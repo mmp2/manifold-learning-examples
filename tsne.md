@@ -20,34 +20,38 @@ Here is a first example to illustrate the issues a practitioner may face with t-
 
 The research group is aware that the parameter choices may affect the algorithm, so they try many possible choices of perplexity. Perplexity is proportional to the number of neighbors $k$ of a data point, and the number of neigbors implicitly defines a radius of the neighborhood (more neighbors implies larger radius); note that the radius does not grow proportionally with $k$, but slower, e.g., approximately as $\sqrt{k}$ when for 2-dimensional data. 
 
-These are the embedding they obtain. Can you figure out how the original data looked like? The answer is [here] or scroll below. 
-
-[figure of d1=5, d2=2 data with no original data, no axes]
-
-3d disk:
-![k_vs_n of_T-SNE_3D](https://user-images.githubusercontent.com/77368272/215299118-345a6dc7-da36-46fb-af3d-b3aa59764072.png)
-3d original:
-![3d_disk_original_notitle](https://user-images.githubusercontent.com/77368272/215299203-51fece04-3546-4058-84d4-81959042b4bd.png)
-![3d_disk_tsne_original](https://user-images.githubusercontent.com/77368272/215299264-118ede45-5ca4-4934-89ca-16d8ecf5a18d.png)
+These are the embedding they obtain.
+<img width="900" src="T-SNE/k_vs_R of T-SNE-1row.png">
 
 
-From left to right, we see:  a circular blob with higher density in the center, clusters of various granularities, or a disk with a hole (that is, a ring). If these data were cells, we could hypothesise that they all behave the same way (the blob), that there are multiple groups with different behaviors (clusters), or that that the behavior varies continuously and cyclically (the ring). 
+
+From left to right, we see:  a circular blob with higher density in the center, clusters of various granularities, or a disk with a hole (that is, a ring). If these data were cells, we could hypothesise that they all behave the same way (the blob), that there are multiple groups with different behaviors (clusters), or that that the behavior varies continuously and cyclically (the ring).  How to figure out how the original data looked like? 
 
 Based on generic results on manifold learning from non-parameteric statistics, to consistently represent a manifold from samples, $n$ must grow to infinity, and the neighborhood radius must shrink towards 0, at a rate much slower than $n$. Hence, by this reasoning the "true structure" of the data must be that on the left hand side. 
 
 On the other hand, by the recommendation of the algorithm authors and implementers, larger perplexity is better, hence we should believe the plots on the extreme right (the ring). Which is the correct answer in this case. 
 
 [plot of true ring data]
-uniform disk (pick one from the 2 below (different sizes)):
-![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215299813-810bf6ab-9dd8-4bc2-8969-6dde5d4ec65f.png)
 
-![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215301106-6425a699-a6ea-4f52-8f39-abec86754b72.png)
+
 
 A featureless low dimensional data set
 ---------------------------------------
 We now embed a disk of radius 1 using various $k$ and $n$ values. As before, when $k$ changes, features appear and disappear in the data. The most remarkable fact is that t-SNE displays not just clusters, but also 1-dimensional *filaments* that do not exist in the data. 
 
+uniform disk (pick one from the 2 below (different sizes)):
+![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215299813-810bf6ab-9dd8-4bc2-8969-6dde5d4ec65f.png)
+
+![T-SNE for Uniform Disks](https://user-images.githubusercontent.com/77368272/215301106-6425a699-a6ea-4f52-8f39-abec86754b72.png)
+
 Note that here the number of neighbors $k$ is similar to other embedding algorithms.
+
+The same disk is now deformed in 3D, like this.
+![3d_disk_original_notitle](https://user-images.githubusercontent.com/77368272/215299203-51fece04-3546-4058-84d4-81959042b4bd.png)
+![3d_disk_tsne_original](https://user-images.githubusercontent.com/77368272/215299264-118ede45-5ca4-4934-89ca-16d8ecf5a18d.png)
+
+3d disk:
+![k_vs_n of_T-SNE_3D](https://user-images.githubusercontent.com/77368272/215299118-345a6dc7-da36-46fb-af3d-b3aa59764072.png)
 
 A featureless graph
 --------------------
@@ -79,10 +83,12 @@ The run time
 In most embedding algorithms, the number of neighbors $k$ is a vanishingly small fraction of $n$. Not so in t-SNE, where the author's recommendation as well as the analysis in [...] is to have $k/n$ approximately constant. Let's see what this means for the algorithm's run time, by looking at the dependence of the run time on $k$.
 
  [MK: to rerun k vs n columns k/n = 0.2 or 0.1 and k/n = 0.01 --because it shows features. save results. save run time:). plot run time vs n, 2 curves for the 2 k/n values, on the same plot. may need to make y axis logarithmic]
- 
+
+
  Plots:
  
- ![image](https://user-images.githubusercontent.com/77368272/215254028-b75423a9-8e62-4e21-af30-d0ea21164d1c.png)
+ ![k_vs_R of T-SNE](https://user-images.githubusercontent.com/5679461/215303791-e77e189a-0b5d-439a-9a34-49bb73b02384.png)
+
  
 Runtime:
  ![image](https://user-images.githubusercontent.com/77368272/215253970-e7a6d369-43be-46d1-9dd6-e6cd9ef1279b.png)
