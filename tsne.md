@@ -86,7 +86,7 @@ $k=3\times perplexity+1$. Hence, the perplexity is proportional to the number of
 But the t-sne authors recommend a parameter called *perplexity*, which is $90\times k$. Moreover, papers like [] suggest $k\propto n$. [Something about run time in this case] Here are the experiments with the author's recommendation. [We believe that choosing larger $k$ indeed forces the algorithm to behave better for smaller sample sizes, but delaying the appearace of problems until $n$ is much larger]
 
 [ Figure with k larger ]
-![Uploading k_vs_R of T-SNE.png…]()
+![k_vs_R of T-SNE](https://user-images.githubusercontent.com/77368272/215299027-4ccb8466-a48e-450e-8cb4-6fff8e4c0c8e.png)
 
 
  
