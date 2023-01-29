@@ -61,7 +61,13 @@ These simple to construct graphs are examples of "high-dimensional" data, i.e. o
 
 [MK's figures of ER]
 
+
+vs p:
 ![T-SNE for Erdos Renyi_vs p_large](https://user-images.githubusercontent.com/77368272/215298860-94954d01-181f-4790-a17c-27b86f80a6b3.png)
+
+vs k:
+![T-SNE for Erdos Renyi_vs k](https://user-images.githubusercontent.com/77368272/215300127-ae822723-680c-4c2c-aa90-6fdc8f5829b0.png)
+
 
 As it turns out, for the ER graph and it's relative the $k$-regular graph, it is known what t-SNE will do for $n$ very large. This paper shows that t-SNE outputs a *ring*, and moreover that the ring becomes thinner when $n$ and $k$ increase, and their figures display rings appearing for $n\geq 40,000$. More precisely, for the rings to appear, $k\propto n$ and the ring width is $\propto (kn)^{-1/4}$. For smaller $k$,the embedding is featureless (as we can observe too). 
 
