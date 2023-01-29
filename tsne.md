@@ -23,6 +23,8 @@ The research group is aware that the parameter choices may affect the algorithm,
 These are the embedding they obtain. Can you figure out how the original data looked like? The answer is [here] or scroll below. 
 
 [figure of d1=5, d2=2 data with no original data, no axes]
+![k_vs_R of T-SNE](https://user-images.githubusercontent.com/77368272/215298908-d3069cbd-f28a-45ba-bd40-c07211d4b19a.png)
+
 
 From left to right, we see:  a circular blob with higher density in the center, clusters of various granularities, or a disk with a hole (that is, a ring). If these data were cells, we could hypothesise that they all behave the same way (the blob), that there are multiple groups with different behaviors (clusters), or that that the behavior varies continuously and cyclically (the ring). 
 
@@ -45,10 +47,13 @@ This paper https://arxiv.org/abs/2102.13009 offers an analysis of t-sne on struc
 
 A *$k$-regular graph* is a graph where each node has exactly $k$ neighbors. This is exactly the situation of a t-SNE neighborhood graphs. However, in the *geometric* neighborhoods graphs above, there is high correlation between the neighbors of nearby nodes. In other words, if 2 points are near each other, they have more neighbors in common. In a *random* $k$-regular graph, 2 nodes that are neighbors are not more likely to have other neighbors in common. An ER$(p)$ graph is a random graph in which each possible edge $(i,j)$ is present with probability $p\in (0,1)$. Hence the expected number of neighbors of an ER$(p)$ graph with $n$ nodes is $np=\bar{k}$.  Below we see how close the ER($p$) graph is to having exactly $\bar{k}$ neighbors pers node. 
 [plots: histograms of k for each p, fixed n]
+![T-SNE for K regular vs k](https://user-images.githubusercontent.com/77368272/215298855-8a68e17f-9be6-4356-a12a-60715df7f7a4.png)
 
 These simple to construct graphs are examples of "high-dimensional" data, i.e. of data that cannot be embedded in low dimensions without distortion. They are also featureless with very high probability, hence if their embedding shows anything different from a blob, that would be an artefact. Our experiments show that t-SNE does find blobs, but it still adds some features like *filaments* and even faint *clusters*.  
 
 [MK's figures of ER]
+
+![T-SNE for Erdos Renyi_vs p_large](https://user-images.githubusercontent.com/77368272/215298860-94954d01-181f-4790-a17c-27b86f80a6b3.png)
 
 As it turns out, for the ER graph and it's relative the $k$-regular graph, it is known what t-SNE will do for $n$ very large. This paper shows that t-SNE outputs a *ring*, and moreover that the ring becomes thinner when $n$ and $k$ increase, and their figures display rings appearing for $n\geq 40,000$. More precisely, for the rings to appear, $k\propto n$ and the ring width is $\propto (kn)^{-1/4}$. For smaller $k$,the embedding is featureless (as we can observe too). 
 
@@ -81,6 +86,8 @@ $k=3\times perplexity+1$. Hence, the perplexity is proportional to the number of
 But the t-sne authors recommend a parameter called *perplexity*, which is $90\times k$. Moreover, papers like [] suggest $k\propto n$. [Something about run time in this case] Here are the experiments with the author's recommendation. [We believe that choosing larger $k$ indeed forces the algorithm to behave better for smaller sample sizes, but delaying the appearace of problems until $n$ is much larger]
 
 [ Figure with k larger ]
+![Uploading k_vs_R of T-SNE.png…]()
+
 
  
 So can we find any intuition on the choice of the perplexity (or equivalently of the $k$) parameter?
