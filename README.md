@@ -31,7 +31,7 @@ For figures and code, please credit [TBW] and cite [TBW]
 * Marina Meila, Professor, concept and scientific leadership
 * Hangliang Harry Ren, spectral embedding, non-uniform density, plotting
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
-* Yujia Wu, data generation, plotting
+* Yujia Wu, data generation, plotting, Local Linear Embedding, aspect ratio
 
 **TODO:** add links to contributors, megaman, sk-learn, images of word2vec, molecule (one distorted and one not), how to give credit/cite
 
