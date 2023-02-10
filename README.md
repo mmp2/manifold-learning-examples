@@ -30,7 +30,7 @@ For figures and code, please credit [TBW] and cite [TBW]
 ## Contributors (in alphabetical order)
 * Haoqi Murray Kang, non-uniform density, aspect ratio, t-SNE
 * Marina Meila, Professor, concept and scientific leadership
-* Hangliang Harry Ren, spectral embedding, non-uniform density, plotting, aspect ratio
+* [Hangliang Harry Ren](https://github.com/Harryahh), spectral embedding, non-uniform density, plotting, aspect ratio
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
 * [Yujia Wu](https://github.com/yujiaw3-1933467), data generation, plotting, Local Linear Embedding, aspect ratio
 
