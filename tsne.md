@@ -80,16 +80,10 @@ For this, we use the ring data.
 ![k_vs_R of T-SNE](https://user-images.githubusercontent.com/5679461/215303791-e77e189a-0b5d-439a-9a34-49bb73b02384.png)
 
 -- to make a table with 2 columns. these figures need axes and labels!-- 
-Runtime:
-<table border="0">
- <tr>
- ![image](https://user-images.githubusercontent.com/77368272/215253970-e7a6d369-43be-46d1-9dd6-e6cd9ef1279b.png)
-  </tr>
-  <tr>
- Algorithm Cost:
- ![image](https://user-images.githubusercontent.com/77368272/215254017-b374577c-5a72-4471-acc7-ad61733f7381.png)
- </tr>
-</table>
+| Runtime | Algorithm Cost   |
+| :---    | :---:    |\
+ ![image](https://user-images.githubusercontent.com/77368272/215253970-e7a6d369-43be-46d1-9dd6-e6cd9ef1279b.png) |
+ ![image](https://user-images.githubusercontent.com/77368272/215254017-b374577c-5a72-4471-acc7-ad61733f7381.png) |
 
 Perplexity and neighborhoods radius
 ------------------------------------
