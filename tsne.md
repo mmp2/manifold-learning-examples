@@ -115,5 +115,6 @@ https://distill.pub/2016/misread-tsne/
 
 t-sne stability and distortions
 --------------------------------
+![Tracking on Disks after TSNE](https://user-images.githubusercontent.com/77368272/218435215-a1b8dbf1-4b12-453e-89bb-974918d52980.png)
 
  
