@@ -28,7 +28,7 @@ The good news is that once you are aware of their presence, the artefacts and di
 For figures and code, please credit [TBW] and cite [TBW]
 
 ## Contributors (in alphabetical order)
-* Haoqi Murray Kang, non-uniform density, aspect ratio, t-SNE
+* [Haoqiang (Murray) Kang](https://github.com/mk322), non-uniform density, aspect ratio, t-SNE
 * Marina Meila, Professor, concept and scientific leadership
 * [Hangliang Ren (Harry)](https://github.com/Harryahh), spectral embedding, non-uniform density, plotting, aspect ratio
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
