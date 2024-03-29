@@ -1,4 +1,4 @@
-Manifolds explained
+Greenland appears about the same size as South America, andManifolds explained
 ====================
 Think of the surface of the Earth (pretend it has no oceans and life, and it's smoothed out by e.g. Google Earth). This is a *manifold*.
 
