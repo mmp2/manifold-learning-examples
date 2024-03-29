@@ -1,4 +1,4 @@
-Greenland appears about the same size as South America, andManifolds explained
+Manifolds explained
 ====================
 Think of the surface of the Earth (pretend it has no oceans and life, and it's smoothed out by e.g. Google Earth). This is a *manifold*.
 
@@ -24,8 +24,9 @@ This is how mathematicians think of manifolds. They call a topo map a **chart**,
 
 Coordinates
 ------------
-On Earth, geographers have a rather smart way to describe every point on earth by its latitude and longitude, the geographic coordinates. 
-bla bla bla
+On Earth, geographers have a rather smart way to describe every point on earth by its latitude and longitude, the geographic coordinates. This works well for satellites, air and sea travel. But if one tries to display the surface of the earth on a map, to be unfolded on a table or on a screen, you can't do that without severe distortion. For instance, on maps.google.com, Finland appears about 5 times larger than Montana (in fact Montana is larger) and Greenland about the same size as South America. The distortions right at the South and North pole  are infinite. 
+
+However, for person exploring Seattle, or for another  person in the Netherlands (where Descartes published his work on analytic geometry and "Cartesian" coordinates) the maps look
+
 
 Computers every point is represented in coordinates.
-A person in Seattle and a person in the Netherlands (where Descartes published his work on analytic geometry and "Cartesian" coordinates) ...
