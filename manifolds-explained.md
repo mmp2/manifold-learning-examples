@@ -26,7 +26,9 @@ Coordinates
 ------------
 On Earth, geographers have a rather smart way to describe every point on earth by its latitude and longitude, the geographic coordinates. This works well for satellites, air and sea travel. But if one tries to display the surface of the earth on a map, to be unfolded on a table or on a screen, you can't do that without severe distortion. For instance, on maps.google.com, Finland appears about 5 times larger than Montana (in fact Montana is larger) and Greenland about the same size as South America. The distortions right at the South and North pole  are infinite. 
 
-However, for person exploring Seattle, or for another  person in the Netherlands (where Descartes published his work on analytic geometry and "Cartesian" coordinates) the maps look
+A person exploring Seattle, and another  person in the Netherlands (where Descartes published his work on analytic geometry and "Cartesian" coordinates), each with their own chart (the topo map), can use longitude and latitude, but they can also use more intutive **coordinate systems** like street numbers, and numbers of buildings along the street, or the coarser map grids labeled A,B,C,D..., 1,2,3.... Thus, on every chart there can be an infinity of coordinate systems. 
+
+Computers every point is represented in coordinates. A point on a manifold is thus represented by the computer as pairs ($x,y$) of numbers on the local coordinate chart, or vectors of numbers $(x_1,x_2,.... x_D)$ the ambient coordinates for the same point. Thus every point on a manifold can have different coordinates, depending on what coordinate system is used. Let's keep this in mind when we talk about [manifold learning](manifold-learning-explained.md).
 
 
-Computers every point is represented in coordinates.
+
