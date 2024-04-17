@@ -5,6 +5,7 @@ Plan for next meeting:
   * links
   * contributors - links, etc
   * license and citations MMP
+  * add links to contributors (each contributor), megaman, sk-learn, images of word2vec, molecule (one distorted and one not), how to give credit/cite (done, MMP)
   
 * aspect_ratio.md -- what is left? finalize in real time
   * umap -- stability -- and are the best embeddings really good?
@@ -21,7 +22,7 @@ Plan for next meeting:
 
 
 List of Problems
-* the Aspect Ratio Problem: choosing independent eigenvectors
+* the Aspect Ratio Problem: choosing independent eigenvectors DONE
 * the Variable Density Problem: distortions due to variable density of data on manifold
 * the Neighborhood Graph Problem: distortions due to the choice of neighborhood graph (in variable density)
 * Artefacts due to method inconsistency and other artefacts
