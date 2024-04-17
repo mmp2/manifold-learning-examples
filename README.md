@@ -16,6 +16,9 @@ The good news is that once you are aware of their presence, the artefacts and di
     -- Video lectures on Manifold Learning by Marina Meila [Video Lecture 1](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-0), [Video Lecture 2](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-1), [Video Lecture 3](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-2), annotated slides from Lecture 1 and from Lectures 2-3 [here](https://sites.stat.washington.edu/mmp/classes.html), and unannotated [Lecture slides](https://sites.stat.washington.edu/mmp/Talks/mani-fields22-notes.pdf) with additional definitions and notes
     -- [Manifold learning: what, how and why](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-040522-115238) by Marina Meila and Hanyu Zhang. Review article in *Annual Reviews of Statistics and Its Applications*, Volume 11, 2024. 
 
+* **links to software**
+     * [scikit-learn](https://scikit-learn.org) simple Manifold Learning software package
+     * [megaman](mmp2.github.io/megaman/) performance optimized Manifold Learning software package, with API compatible with `sk-learn`; `megaman` implements state of the art theoretical results. Updated instructions for installing and using `megaman` on your computer are in [install_use_megaman.ipynb](install_use_megaman.ipynb), [install_env.sh](install_env.sh).
 * **a series of short articles** illustrating significant but less widely known counterintuitive behaviors of manifold learning algorithms. Most of these effects are predictable or documented theoretically, and we include (light) references to the main sources. 
   * [aspect-ratio.md](aspect-ratio.md)  Most real (manifold) data  extends more in one direction than in others, that is, it looks more like elongated strips than as discs or blobs. This can have unexpected drastic consequences on some ML algorithms, when they are used naively. We demonstrate both what can happen, how the problem is detected by simple inspecttion and a simple way to fix it.
   * TBW For most ML algorithms, the way we sample the data affects the algorithm's output. In other words, what we see is not just _the shape_ of the manifold, but a combination of the shape and the _density_ of the data on the manifold, that can vary by algorithm and by the parameters used. 
@@ -25,14 +28,12 @@ The good news is that once you are aware of their presence, the artefacts and di
   * generating samples from simple synthetic manifolds (rectangle, rectangle with a hole, swiss roll=rolled up rectangle, 3D rectangle, circle, torus); in these examples, the samples are distributed nearly uniformly [more details TBW] 
   * generating samples from the same manifolds as above, but in a highly non-uniform manner (that can be controlled). 
   * generating informative plots of the algorithms' output
-  * instructions on how to install megaman on windows
+  * instructions on how to install megaman on windows [install_use_megaman.ipynb](install_use_megaman.ipynb), [install_env.sh](install_env.sh).
 
 * **the plots** used in the articles and many more
 
 ## How to use this site 
-[gnu licence] Feel free to use the code, plots, and to cite the articles on this site. Currently, this is a working repository; some changes to the code or files are possible. For the articles, please use this citation format [TBW].
-
-For figures and code, please credit [TBW] and cite [TBW]
+Feel free to use the code, articles and graphics, citing this repository [as](CITATION.cff). Currently, this is a working repository; some changes to the code or files are possible.
 
 ## Contributors (in alphabetical order)
 * [Haoqiang (Murray) Kang](https://github.com/mk322), non-uniform density, aspect ratio, t-SNE
@@ -41,6 +42,5 @@ For figures and code, please credit [TBW] and cite [TBW]
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
 * [Yujia Wu](https://github.com/yujiaw3-1933467), data generation, plotting, Local Linear Embedding, aspect ratio
 
-**TODO:** add links to contributors, megaman, sk-learn, images of word2vec, molecule (one distorted and one not), how to give credit/cite
 
 
