@@ -33,7 +33,7 @@ The good news is that once you are aware of their presence, the artefacts and di
 * **the plots** used in the articles and many more
 
 ## How to use this site 
-Feel free to use the code, articles and graphics, citing this repository [as](CITATION.cff). Currently, this is a working repository; some changes to the code or files are possible.
+Feel free to use the code, articles and graphics, citing this repository (please see sidebar to obtain citation). Currently, this is a working repository; changes to the code or files are possible.
 
 ## Contributors (in alphabetical order)
 * [Haoqiang (Murray) Kang](https://github.com/mk322), non-uniform density, aspect ratio, t-SNE
