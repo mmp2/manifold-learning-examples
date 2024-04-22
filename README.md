@@ -8,7 +8,7 @@ The good news is that once you are aware of their presence, the artefacts and di
 
 ## What you will find on this site
 * a recent talk hosted by the ACMS social [Unsupervised Learning in the age of Big Data](research-overview-ACMS23.pdf)
-* a recent talk hosted by the [IMSI](https://www.imsi.institute/activities/data-driven-materials-informatics/learning-collective-variables-and-coarse-grained-models/) [Dimension reduction from a user's perspective. Understanding the configuration spaces of molecules with Manifold Learning](mani-w3imsi24.pdf)
+* a recent talk hosted by [IMSI](https://www.imsi.institute/activities/data-driven-materials-informatics/learning-collective-variables-and-coarse-grained-models/): [Dimension reduction from a user's perspective. Understanding the configuration spaces of molecules with Manifold Learning](Talks/mani-w3imsi24.pdf)
 
 * **short tutorial introductions** to manifold learning
      -  [Manifolds explained](manifolds-explained.md)
