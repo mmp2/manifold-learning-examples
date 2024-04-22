@@ -8,10 +8,11 @@ The good news is that once you are aware of their presence, the artefacts and di
 
 ## What you will find on this site
 * a recent talk hosted by the ACMS social [Unsupervised Learning in the age of Big Data](research-overview-ACMS23.pdf)
+* a recent talk hosted by the [IMSI](https://www.imsi.institute/activities/data-driven-materials-informatics/learning-collective-variables-and-coarse-grained-models/) [Dimension reduction from a user's perspective. Understanding the configuration spaces of molecules with Manifold Learning](mani-w3imsi24.pdf)
 
 * **short tutorial introductions** to manifold learning
      -  [Manifolds explained](manifolds-explained.md)
-     -  [Manifold Learning explained](manifold-learning-explained.md)
+     -  Manifold Learning explained (in progress) [](manifold-learning-explained.md)
 * **links to longer tutorials** on manifold learning
     -- Video lectures on Manifold Learning by Marina Meila [Video Lecture 1](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-0), [Video Lecture 2](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-1), [Video Lecture 3](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-2), annotated slides from Lecture 1 and from Lectures 2-3 [here](https://sites.stat.washington.edu/mmp/classes.html), and unannotated [Lecture slides](https://sites.stat.washington.edu/mmp/Talks/mani-fields22-notes.pdf) with additional definitions and notes
     -- [Manifold learning: what, how and why](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-040522-115238) by Marina Meila and Hanyu Zhang. Review article in *Annual Reviews of Statistics and Its Applications*, Volume 11, 2024. 
@@ -33,7 +34,7 @@ The good news is that once you are aware of their presence, the artefacts and di
 * **the plots** used in the articles and many more
 
 ## How to use this site 
-Feel free to use the code, articles and graphics, citing this repository (please see sidebar to obtain citation). Currently, this is a working repository; changes to the code or files are possible.
+Feel free to use the code, articles and graphics, citing this repository (_please see sidebar_ **About** to obtain citation). Currently, this is a working repository; changes to the code or files are possible.
 
 ## Contributors (in alphabetical order)
 * [Haoqiang (Murray) Kang](https://github.com/mk322), non-uniform density, aspect ratio, t-SNE
