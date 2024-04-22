@@ -1,4 +1,4 @@
-#Manifold Learning (ML) / Embedding explained
+## Manifold Learning (ML) / Embedding explained  (in progress)
 
 We all know and love *Principal Components Analysis (PCA)* the workhorse of *linear* dimension reduction. It's universally accepted, understood, reproducible. But when they turn to *non-linear dimension reduction*, the newcomers' first impression is one of chaos: so many choices of algorithms, of parameters, and each output different results for the same data!
 
