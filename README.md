@@ -37,7 +37,7 @@ The good news is that once you are aware of their presence, the artefacts and di
 Feel free to use the code, articles and graphics, citing this repository (_please see sidebar_ **About** to obtain citation). Currently, this is a working repository; changes to the code or files are possible.
 
 ## Contributors (in alphabetical order)
-* [Haoqiang (Murray) Kang](https://github.com/mk322), non-uniform density, aspect ratio, t-SNE
+* [Haoqiang (Murray) Kang](https://github.com/mk322) **original repository creator**, non-uniform density, aspect ratio, t-SNE
 * Marina Meila, Professor, concept and scientific leadership
 * [Hangliang Ren (Harry)](https://github.com/Harryahh), spectral embedding, non-uniform density, plotting, aspect ratio
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
