@@ -39,11 +39,13 @@ above*
 ### No metric:
 
 | ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_no_metric_horiz_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_no_metric_horiz_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_no_metric_horiz_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_no_metric_horiz_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_no_metric_horiz_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_no_metric_horiz_largedot.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
 ### With metric:
 
 | ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_metric_horiz_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_metric_horiz_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_metric_horiz_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_metric_horiz_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_metric_horiz_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_metric_horiz_largedot.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
 
