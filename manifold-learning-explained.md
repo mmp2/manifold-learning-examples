@@ -15,11 +15,11 @@ Unrolling the Swissroll
 A swissroll and the original data before rolling. Ideally, the ML algorithm should recover the original data, or a good approximation of it. Consider the embeddings below. Which ones look "correct" to you and which ones don't? Try to explain to yourself why.
 
 <p align="center">
-  <img src="manifold-learning-examples/manifold-learning-explained-photo/Swissroll/curve.png" width="30%" />
-  <img src="manifold-learning-examples/manifold-learning-explained-photo/Swissroll/rectangle.png" width="30%" />
-  <img src="manifold-learning-examples/manifold-learning-explained-photo/Swissroll/rotate_curve.png" width="30%" />
-  <img src="manifold-learning-examples/manifold-learning-explained-photo/Swissroll/rotation.png" width="30%" />
-  <img src="manifold-learning-examples/manifold-learning-explained-photo/Swissroll/symmetric.png" width="30%" />
+  <img src="manifold-learning-explained-photo/Swissroll/curve.png" width="30%" />
+  <img src="manifold-learning-explained-photo/Swissroll/rectangle.png" width="30%" />
+  <img src="manifold-learning-explained-photo/Swissroll/rotate_curve.png" width="30%" />
+  <img src="manifold-learning-explained-photo/Swissroll/rotation.png" width="30%" />
+  <img src="manifold-learning-explained-photo/Swissroll/symmetric.png" width="30%" />
 </p>
 
 
