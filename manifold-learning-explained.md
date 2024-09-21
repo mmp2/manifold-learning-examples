@@ -48,6 +48,15 @@ above*
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
+### Radius cut:
+
+| ![Isomap](manifold-learning-explained-photo/Torus/Isomap.png) | ![LE](manifold-learning-explained-photo/Torus/LE.png) | ![LLE](manifold-learning-explained-photo/Torus/LLE.png) | ![LTSA](manifold-learning-explained-photo/Torus/LTSA.png) | ![UMAP](manifold-learning-explained-photo/Torus/Umap.png) | ![t-SNE](manifold-learning-explained-photo/Torus/t-SNE.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
+
+### Jupyter Nodebook for previous examples:
+[Open the Jupyter Notebook](Review-figures.ipynb)
+
 
 No matter how a ML algorithm works, its input is always a description of the _local neighborhoods_ of the data points. Typically, for each data point $i$, the distances to $i$'s neighbors are 
 the input. The _neighbors_ are either the $k$-nearest neighbors 
