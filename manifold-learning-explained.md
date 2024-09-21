@@ -37,13 +37,32 @@ rmations_ of the data. This last concept needs refinement.
 above*
 
 <p align="center">
-  <img src="graphs-from-ARSIA-figs/inward_ct_Isomap_no_metric_horiz_largedot.png" width="16%" />
-  <img src="graphs-from-ARSIA-figs/inward_ct_LE_no_metric_horiz_largedot.png" width="16%" />
-  <img src="graphs-from-ARSIA-figs/inward_ct_LLE_no_metric_horiz_largedot.png" width="16%" />
-  <img src="graphs-from-ARSIA-figs/inward_ct_LTSA_no_metric_horiz_largedot.png" width="16%" />
-  <img src="graphs-from-ARSIA-figs/inward_ct_Umap_no_metric_horiz_largedot.png" width="16%" />
-  <img src="graphs-from-ARSIA-figs/inward_ct_t-SNE_no_metric_horiz_largedot.png" width="16%" />
+  <figure>
+    <img src="graphs-from-ARSIA-figs/inward_ct_Isomap_no_metric_horiz_largedot.png" width="16%" />
+    <figcaption>Isomap</figcaption>
+  </figure>
+  <figure>
+    <img src="graphs-from-ARSIA-figs/inward_ct_LE_no_metric_horiz_largedot.png" width="16%" />
+    <figcaption>Locally Linear Embedding (LE)</figcaption>
+  </figure>
+  <figure>
+    <img src="graphs-from-ARSIA-figs/inward_ct_LLE_no_metric_horiz_largedot.png" width="16%" />
+    <figcaption>Local Linear Embedding (LLE)</figcaption>
+  </figure>
+  <figure>
+    <img src="graphs-from-ARSIA-figs/inward_ct_LTSA_no_metric_horiz_largedot.png" width="16%" />
+    <figcaption>Local Tangent Space Alignment (LTSA)</figcaption>
+  </figure>
+  <figure>
+    <img src="graphs-from-ARSIA-figs/inward_ct_Umap_no_metric_horiz_largedot.png" width="16%" />
+    <figcaption>UMAP</figcaption>
+  </figure>
+  <figure>
+    <img src="graphs-from-ARSIA-figs/inward_ct_t-SNE_no_metric_horiz_largedot.png" width="16%" />
+    <figcaption>t-SNE</figcaption>
+  </figure>
 </p>
+
 
 No matter how a ML algorithm works, its input is always a description of the _local neighborhoods_ of the data points. Typically, for each data point $i$, the distances to $i$'s neighbors are 
 the input. The _neighbors_ are either the $k$-nearest neighbors 
