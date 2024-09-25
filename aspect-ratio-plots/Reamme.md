@@ -25,15 +25,15 @@ Within each algorithm's folder, sub-folders correspond to the data types on whic
 
 ### File Naming Criteria
 
-The files are named according to the following format:
+The files are named according to the following format: (which_data)_(algorithms)_(special_feature)
 
 
 #### Examples:
 
-- **Circle_Spectral_embedding_v0_v6**: Refers to Circle data using Spectral Embedding, where the plot shows the 0th and 6th eigenvectors.
+- **(Circle)_(Spectral_embedding)_(v0_v6)**: Refers to Circle data using Spectral Embedding, where the plot shows the 0th and 6th eigenvectors.
   
-- **ct_Isomap_radial**: Refers to Chopped Torus data using Isomap embedding, chopped again by the radial direction.
+- **(ct)_(Isomap)_(radial)**: Refers to Chopped Torus data using Isomap embedding, chopped again by the radial direction.
   
-- **SwissRoll_rectangle**: Refers to SwissRoll data, deformed by the algorithm into a rectangular shape.
+- **(SwissRoll)_(rectangle)**: Refers to SwissRoll data, deformed by the algorithm into a rectangular shape.
 
 These conventions help identify the dataset, algorithm, and specific features used in each plot.
