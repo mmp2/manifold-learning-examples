@@ -15,11 +15,11 @@ Unrolling the Swissroll
 A swissroll and the original data before rolling. Ideally, the ML algorithm should recover the original data, or a good approximation of it. Consider the embeddings below. Which ones look "correct" to you and which ones don't? Try to explain to yourself why.
 
 <p align="center">
-  <img src="manifold-learning-explained-photo/Swissroll/curve.png" width="19%" />
-  <img src="manifold-learning-explained-photo/Swissroll/rectangle.png" width="19%" />
-  <img src="manifold-learning-explained-photo/Swissroll/rotate_curve.png" width="19%" />
-  <img src="manifold-learning-explained-photo/Swissroll/rotation.png" width="19%" />
-  <img src="manifold-learning-explained-photo/Swissroll/symmetric.png" width="19%" />
+  <img src="aspect-ratio-plots/Swissroll_representatives/SwissRoll_curve.png" width="19%" />
+  <img src="aspect-ratio-plots/Swissroll_representatives/SwissRoll_rectangle.png" width="19%" />
+  <img src="aspect-ratio-plots/Swissroll_representatives/SwissRoll_rotate_curve.png" width="19%" />
+  <img src="aspect-ratio-plots/Swissroll_representatives/SwissRoll_rotation.png" width="19%" />
+  <img src="aspect-ratio-plots/Swissroll_representatives/SwissRoll_symmetric.png" width="19%" />
 </p>
 
 
@@ -50,7 +50,7 @@ above*
 
 ### Radius cut:
 
-| ![Isomap](manifold-learning-explained-photo/Torus/Isomap.png) | ![LE](manifold-learning-explained-photo/Torus/LE.png) | ![LLE](manifold-learning-explained-photo/Torus/LLE.png) | ![LTSA](manifold-learning-explained-photo/Torus/LTSA.png) | ![UMAP](manifold-learning-explained-photo/Torus/Umap.png) | ![t-SNE](manifold-learning-explained-photo/Torus/t-SNE.png) |
+| ![Isomap](aspect-ratio-plots/Chopped_Torus/ct_Isomap_radial.png) | ![LE](aspect-ratio-plots/Chopped_Torus/ct_LE_radial.png) | ![LLE](aspect-ratio-plots/Chopped_Torus/ct_LLE_radial.png) | ![LTSA](aspect-ratio-plots/Chopped_Torus/ct_LTSA_radial.png) | ![UMAP](aspect-ratio-plots/Chopped_Torus/ct_Umap_radial.png) | ![t-SNE](aspect-ratio-plots/Chopped_Torus/ct_t-SNE_radial.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
