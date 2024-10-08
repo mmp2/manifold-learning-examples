@@ -33,38 +33,34 @@ Clearly, a rigid translation or rotation of the original data sh
 ould be acceptable. We may also find acceptable some _small defo
 rmations_ of the data. This last concept needs refinement.
 
-*examples needed here -- to take from one of the non-embeddings 
-above*
+In the example of the SwissRoll, all we had to do to map data from 3 dimensions down to its intrinsic dimension $d=2$ was to unroll the rectangular strip. This can be done without cutting the strip, and even without stretching it. We say that the embedding is _isometric_
 
-### No metric:
+##Cut Torus 
+Let us now take the _CutTorus_   _figure of cut torus here, and of sample from it. 
+
+This manifold also has $d=2$, clearly, so we should be able to represent it in 2 dimensions. But this is not possible without stretching the Cut Torus to flatten it on the plane. This is what the embeddings by different algorithms look like. 
 
 | ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_no_metric_horiz_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_no_metric_horiz_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_no_metric_horiz_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_no_metric_horiz_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_no_metric_horiz_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_no_metric_horiz_largedot.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
-### With metric:
+None of the embeddings are isometric, but some look definitely more deformed than others. _More comments here on topology preserving_  We can measure how much and in what direction the manifold was distorted using the _(Reciprocal) Push-Forward Riemannian Metric_ $H$. _cite location in course here_ Here we will  call the (Reciprocal) Push-Forward Riemannian Metric something simpler, the _distortion_, or _local distortion_, or _distortion matrix_. Indeed $H$ is a $2\times 2$ symmetric positive definite matrix. The plots below show the directions of its 2 eigenvectors as the axes of an ellipse; the length of each axis is the respective eigenvalue. If there is no distortion, the eigenvalues are both equal to 1, and $H$ displays like a circle. This can be seen in the Isomap detail plot as the middle ellipse. 
 
 | ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_with_metric_horiz_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_with_metric_horiz_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_with_metric_horiz_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_with_metric_horiz_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_with_metric_horiz_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_with_metric_horiz_largedot.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
-### Radius cut:
+Details of the same embeddings. As expected, if the middle line of the Cut Torus is preserved undistorted, then the inner and outer borders must be stretched to fit on a plane.
 
 | ![Isomap](aspect-ratio-plots/Chopped_Torus/ct_Isomap_radial.png) | ![LE](aspect-ratio-plots/Chopped_Torus/ct_LE_radial.png) | ![LLE](aspect-ratio-plots/Chopped_Torus/ct_LLE_radial.png) | ![LTSA](aspect-ratio-plots/Chopped_Torus/ct_LTSA_radial.png) | ![UMAP](aspect-ratio-plots/Chopped_Torus/ct_Umap_radial.png) | ![t-SNE](aspect-ratio-plots/Chopped_Torus/ct_t-SNE_radial.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
-### China map example:
+## Torus
+_figure of torus here_
+The Torus is a manifold that could be the outer surface of a bagel (without the interior). Thus, it has the same intrinsic dimension as the Cut Torus above, $d=2$. But, unlike the Cut Torus, no amount of stretching can let us map the torus to a plane (this is true about the sphere too). Of course, one can make a cut in the torus, in which case it will become a Cut Torus, which can be embedded in the plane. Or we can simply imagine putting a big weight on top if it, and outright flattening it down to the plane _figure here? something funny_  Here _to include link_ we explain how these operations on the Torus differ from what is called embedding. 
 
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_no_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_no_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_no_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_no_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_no_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_no_metric_0.5.png) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
-
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_with_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_with_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_with_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_with_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_with_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_with_metric_0.5.png) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
-
-### Torus examples:
+The only thing to do is to map the Torus to more dimensions than $d$, namely to $m=3$ dimensions; $m$ is called the _embedding dimension_. Isn't mapping from 3 to 3 dimensions pointless? Yes, in real life it would be quite pointless to take this torus and "reduce dimension"; but many times, such a torus can exist in a space with many more dimensions; those other dimensions would be quite useless, but we humans can't see it directly. An algorithm like PCA, or the embedding algorithms shown here removes the extra dimensions to let us see the data shape. 
 
 | ![Isomap](aspect-ratio-plots/Torus/Torus_Isomap_no_metric_vert.png) | ![LE](aspect-ratio-plots/Torus/Torus_LE_no_metric_vert.png) | ![LLE](aspect-ratio-plots/Torus/Torus_LLE_no_metric_vert.png) | ![LTSA](aspect-ratio-plots/Torus/Torus_LTSA_no_metric_vert.png) | ![UMAP](aspect-ratio-plots/Torus/Torus_Umap_no_metric_vert.png) | ![t-SNE](aspect-ratio-plots/Torus/Torus_t-sne_no_metric_vert.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -75,9 +71,23 @@ above*
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
 
-### Jupyter Nodebook for previous examples:
+### Jupyter Nodebook for Swiss Roll, Cut Torus and Torus examples:
 [Open the Jupyter Notebook](Review-figures.ipynb)
 
+
+### China map example: 
+_this example will be moved to a post of its own_
+
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_no_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_no_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_no_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_no_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_no_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_no_metric_0.5.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
+
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_with_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_with_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_with_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_with_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_with_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_with_metric_0.5.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
+
+How do embedding algorithms work?
+=================================
 
 No matter how a ML algorithm works, its input is always a description of the _local neighborhoods_ of the data points. Typically, for each data point $i$, the distances to $i$'s neighbors are 
 the input. The _neighbors_ are either the $k$-nearest neighbors 
