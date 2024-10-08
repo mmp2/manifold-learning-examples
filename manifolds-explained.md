@@ -22,6 +22,7 @@ You can do it by putting 2 maps in correspondence, then adding a third that over
 
 This is how mathematicians think of manifolds. They call a topo map a **chart**, and the entire set of maps an **atlas**.
 
+
 Coordinates
 ------------
 On Earth, geographers have a rather smart way to describe every point on earth by its latitude and longitude, the geographic coordinates. This works well for satellites, air and sea travel. But if one tries to display the surface of the earth on a map, to be unfolded on a table or on a screen, you can't do that without severe distortion. For instance, on maps.google.com, Finland appears about 5 times larger than Montana (in fact Montana is larger) and Greenland about the same size as South America. The distortions right at the South and North pole  are infinite. 
