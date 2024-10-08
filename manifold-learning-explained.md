@@ -54,6 +54,27 @@ above*
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
+### China map example:
+
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_no_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_no_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_no_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_no_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_no_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_no_metric_0.5.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
+
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_with_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_with_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_with_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_with_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_with_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_with_metric_0.5.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
+
+### Torus examples:
+
+| ![Isomap](aspect-ratio-plots/Torus/Torus_Isomap_no_metric_vert.png) | ![LE](aspect-ratio-plots/Torus/Torus_LE_no_metric_vert.png) | ![LLE](aspect-ratio-plots/Torus/Torus_LLE_no_metric_vert.png) | ![LTSA](aspect-ratio-plots/Torus/Torus_LTSA_no_metric_vert.png) | ![UMAP](aspect-ratio-plots/Torus/Torus_Umap_no_metric_vert.png) | ![t-SNE](aspect-ratio-plots/Torus/Torus_t-SNE_no_metric_vert.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
+
+| ![Isomap](aspect-ratio-plots/Torus/Torus_Isomap_with_metric_vert.png) | ![LE](aspect-ratio-plots/Torus/Torus_LE_with_metric_vert.png) | ![LLE](aspect-ratio-plots/Torus/Torus_LLE_with_metric_vert.png) | ![LTSA](aspect-ratio-plots/Torus/Torus_LTSA_with_metric_vert.png) | ![UMAP](aspect-ratio-plots/Torus/Torus_Umap_with_metric_vert.png) | ![t-SNE](aspect-ratio-plots/Torus/Torus_t-SNE_with_metric_vert.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
+
+
 ### Jupyter Nodebook for previous examples:
 [Open the Jupyter Notebook](Review-figures.ipynb)
 
