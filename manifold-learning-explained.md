@@ -74,6 +74,7 @@ above*
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
+.
 
 ### Jupyter Nodebook for previous examples:
 [Open the Jupyter Notebook](Review-figures.ipynb)
