@@ -78,6 +78,8 @@ The only thing to do is to map the Torus to more dimensions than $d$, namely to 
 ### China map example: 
 _this example will be moved to a post of its own_
 
+SIMPLE test for push request!!!
+
 | ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_no_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_no_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_no_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_no_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_no_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_no_metric_0.5.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
