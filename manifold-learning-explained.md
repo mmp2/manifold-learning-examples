@@ -13,7 +13,12 @@ Unrolling the Swissroll
 
 *Figures: Swissroll 8/1.9 | rectangle 8/1.9 |
 #### Swissroll 3d data 
-<img src="aspect-ratio-plots/Swissroll_representatives/SwissRoll_3d.png" alt="SwissRoll 3d data visualization" style="width: 33%;"> 
+
+
+<p align="center">
+  <img src="aspect-ratio-plots/Swissroll_representatives/SwissRoll_3d.png" alt="Swiss Roll 3D Plot" style="width: 33%;">
+</p>
+
 
 A swissroll and the original data before rolling. Ideally, the ML algorithm should recover the original data, or a good approximation of it. Consider the embeddings below. Which ones look "correct" to you and which ones don't? Try to explain to yourself why.
 
@@ -40,7 +45,10 @@ In the example of the SwissRoll, all we had to do to map data from 3 dimensions 
 
 ## Cut Torus 
 Let us now take the _CutTorus_   _figure of cut torus here, and of sample from it.
-<img src="aspect-ratio-plots/Chopped_Torus/Chopped_Torus_3d.png" alt="Chopped Torus 3d data visualization" style="width: 33%;"> 
+
+<p align="center">
+  <img src="aspect-ratio-plots/Chopped_Torus/Chopped_Torus_3d.png" alt="Chopped Torus 3d data visualization" style="width: 50%;"> 
+</p>
 
 This manifold also has $d=2$, clearly, so we should be able to represent it in 2 dimensions. But this is not possible without stretching the Cut Torus to flatten it on the plane. This is what the embeddings by different algorithms look like. 
 
@@ -62,7 +70,10 @@ Details of the same embeddings. As expected, if the middle line of the Cut Torus
 
 ## Torus
 _figure of torus here_
+
+<p align="center">
 <img src="aspect-ratio-plots/Torus/Torus_3d.png" alt="Torus 3d data visualization" style="width: 33%;">
+</p>
 
 The Torus is a manifold that could be the outer surface of a bagel (without the interior). Thus, it has the same intrinsic dimension as the Cut Torus above, $d=2$. But, unlike the Cut Torus, no amount of stretching can let us map the torus to a plane (this is true about the sphere too). Of course, one can make a cut in the torus, in which case it will become a Cut Torus, which can be embedded in the plane. Or we can simply imagine putting a big weight on top if it, and outright flattening it down to the plane _figure here? something funny_  Here _to include link_ we explain how these operations on the Torus differ from what is called embedding. 
 
