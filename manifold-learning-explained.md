@@ -52,13 +52,13 @@ Let us now take the _CutTorus_   _figure of cut torus here, and of sample from i
 
 This manifold also has $d=2$, clearly, so we should be able to represent it in 2 dimensions. But this is not possible without stretching the Cut Torus to flatten it on the plane. This is what the embeddings by different algorithms look like. 
 
-| ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_no_metric_horiz_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_no_metric_horiz_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_no_metric_horiz_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_no_metric_horiz_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_no_metric_horiz_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_no_metric_horiz_largedot.png) |
+| ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_no_metric_vert_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_no_metric_vert_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_no_metric_vert_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_no_metric_vert_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_no_metric_vert_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_no_metric_vert_largedot.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
 None of the embeddings are isometric, but some look definitely more deformed than others. _More comments here on topology preserving_  We can measure how much and in what direction the manifold was distorted using the _(Reciprocal) Push-Forward Riemannian Metric_ $H$. _cite location in course here_ Here we will  call the (Reciprocal) Push-Forward Riemannian Metric something simpler, the _distortion_, or _local distortion_, or _distortion matrix_. Indeed $H$ is a $2\times 2$ symmetric positive definite matrix. The plots below show the directions of its 2 eigenvectors as the axes of an ellipse; the length of each axis is the respective eigenvalue. If there is no distortion, the eigenvalues are both equal to 1, and $H$ displays like a circle. This can be seen in the Isomap detail plot as the middle ellipse. 
 
-| ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_with_metric_horiz_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_with_metric_horiz_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_with_metric_horiz_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_with_metric_horiz_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_with_metric_horiz_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_with_metric_horiz_largedot.png) |
+| ![Isomap](graphs-from-ARSIA-figs/inward_ct_Isomap_with_metric_vert_largedot.png) | ![LE](graphs-from-ARSIA-figs/inward_ct_LE_with_metric_vert_largedot.png) | ![LLE](graphs-from-ARSIA-figs/inward_ct_LLE_with_metric_vert_largedot.png) | ![LTSA](graphs-from-ARSIA-figs/inward_ct_LTSA_with_metric_vert_largedot.png) | ![UMAP](graphs-from-ARSIA-figs/inward_ct_Umap_with_metric_vert_largedot.png) | ![t-SNE](graphs-from-ARSIA-figs/inward_ct_t-SNE_with_metric_vert_largedot.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
@@ -101,11 +101,11 @@ _this example will be moved to a post of its own_
 
 SIMPLE test for push request!!!
 
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_no_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_no_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_no_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_no_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_no_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_no_metric_0.5.png) |
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_noName_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_noName_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_noName_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_noName_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_noName_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_noName_69.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_with_metric_0.5.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_with_metric_0.5.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_with_metric_0.5.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_with_metric_0.5.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_with_metric_0.5.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_with_metric_0.5.png) |
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_Name_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_Name_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_Name_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_Name_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_Name_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_Name_69.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
