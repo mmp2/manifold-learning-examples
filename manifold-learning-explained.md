@@ -79,11 +79,11 @@ The Torus is a manifold that could be the outer surface of a bagel (without the 
 
 The only thing to do is to map the Torus to more dimensions than $d$, namely to $m=3$ dimensions; $m$ is called the _embedding dimension_. Isn't mapping from 3 to 3 dimensions pointless? Yes, in real life it would be quite pointless to take this torus and "reduce dimension"; but many times, such a torus can exist in a space with many more dimensions; those other dimensions would be quite useless, but we humans can't see it directly. An algorithm like PCA, or the embedding algorithms shown here removes the extra dimensions to let us see the data shape. 
 
-| ![Isomap](aspect-ratio-plots/Torus/Torus_Isomap_no_metric_vert.png) | ![LE](aspect-ratio-plots/Torus/Torus_LE_no_metric_vert.png) | ![LLE](aspect-ratio-plots/Torus/Torus_LLE_no_metric_vert.png) | ![LTSA](aspect-ratio-plots/Torus/Torus_LTSA_no_metric_vert.png) | ![UMAP](aspect-ratio-plots/Torus/Torus_Umap_no_metric_vert.png) | ![t-SNE](aspect-ratio-plots/Torus/Torus_t-sne_no_metric_vert.png) |
+| ![Isomap](aspect-ratio-plots/Torus/Torus_Isomap_no_metric_vert.png) | ![LE](aspect-ratio-plots/Torus/Torus_LE_no_metric_vert.png) | ![LLE](aspect-ratio-plots/Torus/Torus_LLE_no_metric_vert.png) | ![LTSA](aspect-ratio-plots/Torus/Torus_LTSA_no_metric_vert.png) | ![UMAP](aspect-ratio-plots/Torus/Torus_Umap_no_metric_vert.png) | ![t-SNE](aspect-ratio-plots/Torus/Torus_t-SNE_no_metric_vert.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
-| ![Isomap](aspect-ratio-plots/Torus/Torus_Isomap_with_metric_vert.png) | ![LE](aspect-ratio-plots/Torus/Torus_LE_with_metric_vert.png) | ![LLE](aspect-ratio-plots/Torus/Torus_LLE_with_metric_vert.png) | ![LTSA](aspect-ratio-plots/Torus/Torus_LTSA_with_metric_vert.png) | ![UMAP](aspect-ratio-plots/Torus/Torus_Umap_with_metric_vert.png) | ![t-SNE](aspect-ratio-plots/Torus/Torus_t-sne_with_metric_vert.png) |
+| ![Isomap](aspect-ratio-plots/Torus/Torus_Isomap_with_metric_vert.png) | ![LE](aspect-ratio-plots/Torus/Torus_LE_with_metric_vert.png) | ![LLE](aspect-ratio-plots/Torus/Torus_LLE_with_metric_vert.png) | ![LTSA](aspect-ratio-plots/Torus/Torus_LTSA_with_metric_vert.png) | ![UMAP](aspect-ratio-plots/Torus/Torus_Umap_with_metric_vert.png) | ![t-SNE](aspect-ratio-plots/Torus/Torus_t-SNE_with_metric_vert.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
@@ -101,11 +101,11 @@ _this example will be moved to a post of its own_
 
 SIMPLE test for push request!!!
 
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_noName_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_noName_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_noName_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_noName_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_noName_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_noName_69.png) |
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_noName_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_noName_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_noName_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_noName_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_noName_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_noName_69.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_Name_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_Name_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_Name_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_Name_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_Name_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-sne_Name_69.png) |
+| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_Name_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_Name_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_Name_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_Name_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_Name_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_Name_69.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
