@@ -1,7 +1,8 @@
 What is an embedding? A touch of topology on the torus
 ======================================================
 
-The torus is a manifold with intrinsic dimension $d=2$, but which cannot be *embedded* into 2D. This is similar to the sphere which cannot be mapped entirely on a sheet of paper without first cutting it, then deforming it. A good illustration of this is here XXXX.
+The torus is a manifold with intrinsic dimension $d=2$, but which cannot be *embedded* into 2D. This is similar to the sphere which cannot be mapped entirely on a sheet of paper without first cutting it, then deforming it. A good illustration of this is [here](https://www.axismaps.com/guide/map-projections). 
+
 
 Of course we can always *map* a torus in 2D, by flattening it or cutting it, but we would not call these **embeddings** because they destroy the **topology** of the original torus shape, while an **embedding** (sometimes we like to call it a *smooth embedding*) must **preserve the topology**.
 
@@ -28,4 +29,4 @@ We can check if a mapping of the torus is an embedding with  *global* criteria, 
  * Sphere 1 hollow
  * Cut torus 0 loops, 0 hollows
 
-The numbers of loops and hollows are called the Beti numbers of the shape.
+The numbers of loops and hollows are called the [Beti numbers](https://en.wikipedia.org/wiki/Betti_number) of the shape.
