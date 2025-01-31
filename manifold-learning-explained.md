@@ -68,8 +68,12 @@ Details of the same embeddings. As expected, if the middle line of the Cut Torus
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE |
 
+More comparisons
+----------------
+* [Recognize these familiar shapes](/maps-anon.md) after they were embedded by the algorithms. Go here first if you want to guess what each shape is. 
+* [Same shapes and algorithms compared](maps-embeddings.md) this time without a mystery. Come here for the answers to the above.
+
 ## Torus
-_figure of torus here_
 
 <p align="center">
 <img src="aspect-ratio-plots/Torus/Torus_3d.png" alt="Torus 3d data visualization" style="width: 33%;">
