@@ -100,19 +100,6 @@ The only thing to do is to map the Torus to more dimensions than $d$, namely to 
 [Open the Jupyter Notebook](Review-figures.ipynb)
 
 
-### China map example: 
-_this example will be moved to a post of its own_
-
-SIMPLE test for push request!!!
-
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_noName_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_noName_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_noName_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_noName_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_noName_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_noName_69.png) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
-
-| ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_Name_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_Name_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_Name_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_Name_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_Name_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_Name_69.png) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| Isomap | LE | LLE | LTSA | UMAP | t-SNE |
-
 How do embedding algorithms work?
 =================================
 
