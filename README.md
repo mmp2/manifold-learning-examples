@@ -12,7 +12,11 @@ The good news is that once you are aware of their presence, the artefacts and di
 
 * **short tutorial introductions** to manifold learning
      -  [Manifolds explained](manifolds-explained.md)
-     -  Manifold Learning explained (in progress) [](manifold-learning-explained.md)
+     -  [Manifold Learning explained](manifold-learning-explained.md)
+     -  ---[What is an "embedding", and what is not one](smooth-embedding.md) 
+     -  ---[more examples of embeddings of some familliar shapes. Can you recognize them?](maps-anon.md)
+     -  ---[more examples of embeddings of some familliar shapes. Answers unveiled](maps-embeddings.md)
+     
 * **links to longer tutorials** on manifold learning
     -- Video lectures on Manifold Learning by Marina Meila [Video Lecture 1](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-0), [Video Lecture 2](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-1), [Video Lecture 3](http://www.fields.utoronto.ca/talks/tutorial-Manifold-Learning-real-data-2), annotated slides from Lecture 1 and from Lectures 2-3 [here](https://sites.stat.washington.edu/mmp/classes.html), and unannotated [Lecture slides](https://sites.stat.washington.edu/mmp/Talks/mani-fields22-notes.pdf) with additional definitions and notes
     -- [Manifold learning: what, how and why](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-040522-115238) by Marina Meila and Hanyu Zhang. Review article in *Annual Reviews of Statistics and Its Applications*, Volume 11, 2024. 
@@ -42,6 +46,7 @@ Feel free to use the code, articles and graphics, citing this repository (_pleas
 * [Hangliang Ren (Harry)](https://github.com/Harryahh), spectral embedding, non-uniform density, plotting, aspect ratio
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
 * [Yujia Wu](https://github.com/yujiaw3-1933467), data generation, plotting, Local Linear Embedding, aspect ratio
+* [Shuzhen Zhang](https://stat.uw.edu/people/shuzhen-zhang) manifold learning explained, Riemannian metric, maps embeddings
 
 
 
