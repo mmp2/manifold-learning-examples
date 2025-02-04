@@ -13,7 +13,7 @@ The good news is that once you are aware of their presence, the artefacts and di
 * **short tutorial introductions** to manifold learning
      -  [Manifolds explained](manifolds-explained.md)
      -  [Manifold Learning explained](manifold-learning-explained.md)
-     -  ---[What is an "embedding", and what is not one](smooth-embedding.md) 
+     -  ---[What is an "embedding", and what is not one](smooth-embedding.md), with a touch of topology on the torus.
      -  ---[more examples of embeddings of some familliar shapes. Can you recognize them?](maps-anon.md)
      -  ---[more examples of embeddings of some familliar shapes. Answers unveiled](maps-embeddings.md)
      
