@@ -5,17 +5,17 @@ The same 2D shape was embedded by various algorithms. Can you recognize what it 
 
 ## Shape A 
 
-| ![Isomap]("/manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/US/US_Isomap_01_gray.png) | ![LE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/US/US_LE_01_gray.png) | ![LLE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/US/US_LLE_01_gray.png) | ![LTSA]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/US/US_LTSA_01_gray.png) | ![UMAP]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/US/US_Umap_01_gray.png) | ![t-SNE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/US/US_t-SNE_01_gray.png) |
+| ![Isomap](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/US/US_Isomap_01_gray.png) | ![LE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/US/US_LE_01_gray.png) | ![LLE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/US/US_LLE_01_gray.png) | ![LTSA](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/US/US_LTSA_01_gray.png) | ![UMAP](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/US/US_Umap_01_gray.png) | ![t-SNE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/US/US_t-SNE_01_gray.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 
 ## Shape B 
 
-| ![Isomap]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/EU/EU_Isomap_01_gray.png) | ![LE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/EU/EU_LE_01_gray.png) | ![LLE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/EU/EU_LLE_01_gray.png) | ![LTSA]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/EU/EU_LTSA_01_gray.png) | ![UMAP]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/EU/EU_Umap_01_gray.png) | ![t-SNE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/EU/EU_t-SNE_01_gray.png) |
+| ![Isomap](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/EU/EU_Isomap_01_gray.png) | ![LE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/EU/EU_LE_01_gray.png) | ![LLE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/EU/EU_LLE_01_gray.png) | ![LTSA](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/EU/EU_LTSA_01_gray.png) | ![UMAP](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/EU/EU_Umap_01_gray.png) | ![t-SNE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/EU/EU_t-SNE_01_gray.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 
 ## Shape C 
 
-| ![Isomap]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/CN/CN_Isomap_01_gray.png) | ![LE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/CN/CN_LE_01_gray.png) | ![LLE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/CN/CN_LLE_01_gray.png) | ![LTSA]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/CN/CN_LTSA_01_gray.png) | ![UMAP]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/CN/CN_Umap_01_gray.png) | ![t-SNE]("manifold-learning-examples/aspect-ratio-plots/Geographic_explain"/CN/CN_t-SNE_01_gray.png) |
+| ![Isomap](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/CN/CN_Isomap_01_gray.png) | ![LE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/CN/CN_LE_01_gray.png) | ![LLE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/CN/CN_LLE_01_gray.png) | ![LTSA](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/CN/CN_LTSA_01_gray.png) | ![UMAP](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/CN/CN_Umap_01_gray.png) | ![t-SNE](manifold-learning-examples/aspect-ratio-plots/Geographic_explain/CN/CN_t-SNE_01_gray.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 
 
