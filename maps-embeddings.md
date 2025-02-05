@@ -1,31 +1,55 @@
+## Shape A (United States of America)
 
-### Shape A is the map of the United States of America
 
-| ![LTSA](/aspect-ratio-plots/Geographic_explain/US/US_LTSA_01_colored.png) | ![Isomap](/aspect-ratio-plots/Geographic_explain/US/US_Isomap_01_colored.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/US/US_t-SNE_01_colored.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/US/US_Umap_02_colored.png) | ![LE](/aspect-ratio-plots/Geographic_explain/US/US_LE_02_colored.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/US/US_LLE_02_colored.png) |
+### Original Map
+
+<div align="center">
+  <img src="aspect-ratio-plots/Geographic_explain/US_real.png" 
+       alt="China Real Map" width="33%">
+  <img src="aspect-ratio-plots/Geographic_explain/US_colored_cities.png" 
+       alt="China Map with Cities" width="33%">
+</div>
+
+### Embeddings
+| ![Isomap](/aspect-ratio-plots/Geographic_explain/US/US_Isomap_01_colored_cities.png) | ![LE](/aspect-ratio-plots/Geographic_explain/US/US_LE_02_colored_cities.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/US/US_LLE_02_colored_cities.png) | ![LTSA](/aspect-ratio-plots/Geographic_explain/US/US_LTSA_01_colored_cities.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/US/US_t-SNE_01_colored_cities.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/US/US_Umap_02_colored_cities.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-
-| ![LTSA](/aspect-ratio-plots/Geographic_explain/US/US_LTSA_01_colored_cities.png) | ![Isomap](/aspect-ratio-plots/Geographic_explain/US/US_Isomap_01_colored_cities.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/US/US_t-SNE_01_colored_cities.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/US/US_Umap_02_colored_cities.png) | ![LE](/aspect-ratio-plots/Geographic_explain/US/US_LE_02_colored_cities.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/US/US_LLE_02_colored_cities.png) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Isomap** | **LE** | **LLE** | **LTSA** | **t-SNE** | **UMAP** |
 
 ---
 
-### Shape B is the map of part of Europe
+## Shape B (Part of Europe)
 
-| ![LTSA](/aspect-ratio-plots/Geographic_explain/EU/EU_LTSA_01_colored.png) | ![Isomap](/aspect-ratio-plots/Geographic_explain/EU/EU_Isomap_01_colored.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/EU/EU_t-SNE_01_colored.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/EU/EU_Umap_02_colored.png) | ![LE](/aspect-ratio-plots/Geographic_explain/EU/EU_LE_02_colored.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/EU/EU_LLE_02_colored.png) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
+### Original Map
 
-| ![LTSA](/aspect-ratio-plots/Geographic_explain/EU/EU_LTSA_01_colored_cities.png) | ![Isomap](/aspect-ratio-plots/Geographic_explain/EU/EU_Isomap_01_colored_cities.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/EU/EU_t-SNE_01_colored_cities.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/EU/EU_Umap_02_colored_cities.png) | ![LE](/aspect-ratio-plots/Geographic_explain/EU/EU_LE_02_colored_cities.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/EU/EU_LLE_02_colored_cities.png) |
+<div align="center">
+  <img src="aspect-ratio-plots/Geographic_explain/EU_real.png" 
+       alt="China Real Map" width="33%">
+  <img src="aspect-ratio-plots/Geographic_explain/EU_colored_cities.png" 
+       alt="China Map with Cities" width="33%">
+</div>
+
+### Embeddings
+| ![Isomap](/aspect-ratio-plots/Geographic_explain/EU/EU_Isomap_01_colored_cities.png) | ![LE](/aspect-ratio-plots/Geographic_explain/EU/EU_LE_02_colored_cities.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/EU/EU_LLE_02_colored_cities.png) | ![LTSA](/aspect-ratio-plots/Geographic_explain/EU/EU_LTSA_01_colored_cities.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/EU/EU_t-SNE_01_colored_cities.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/EU/EU_Umap_02_colored_cities.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
+| **Isomap** | **LE** | **LLE** | **LTSA** | **t-SNE** | **UMAP** |
 
 ---
 
-### Shape C is the map of China
+## Shape C (China)
 
-| ![LTSA](/aspect-ratio-plots/Geographic_explain/CN/CN_LTSA_01_colored.png) | ![Isomap](/aspect-ratio-plots/Geographic_explain/CN/CN_Isomap_01_colored.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/CN/CN_t-SNE_01_colored.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/CN/CN_Umap_01_colored.png) | ![LE](/aspect-ratio-plots/Geographic_explain/CN/CN_LE_01_colored.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/CN/CN_LLE_01_colored.png) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
+### Original Map
 
-| ![LTSA](/aspect-ratio-plots/Geographic_explain/CN/CN_LTSA_01_colored_cities.png) | ![Isomap](/aspect-ratio-plots/Geographic_explain/CN/CN_Isomap_01_colored_cities.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/CN/CN_t-SNE_01_colored_cities.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/CN/CN_Umap_01_colored_cities.png) | ![LE](/aspect-ratio-plots/Geographic_explain/CN/CN_LE_01_colored_cities.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/CN/CN_LLE_01_colored_cities.png) |
+<div align="center">
+  <img src="aspect-ratio-plots/Geographic_explain/CN_real.png" 
+       alt="China Real Map" width="33%">
+  <img src="aspect-ratio-plots/Geographic_explain/CN_colored_cities.png" 
+       alt="China Map with Cities" width="33%">
+</div>
+
+### Embeddings
+| ![Isomap](/aspect-ratio-plots/Geographic_explain/CN/CN_Isomap_01_colored_cities.png) | ![LE](/aspect-ratio-plots/Geographic_explain/CN/CN_LE_01_colored_cities.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/CN/CN_LLE_01_colored_cities.png) | ![LTSA](/aspect-ratio-plots/Geographic_explain/CN/CN_LTSA_01_colored_cities.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/CN/CN_t-SNE_01_colored_cities.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/CN/CN_Umap_01_colored_cities.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
+| **Isomap** | **LE** | **LLE** | **LTSA** | **t-SNE** | **UMAP** |
 
 
 
