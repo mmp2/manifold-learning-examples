@@ -5,9 +5,9 @@
 
 <div align="center">
   <img src="aspect-ratio-plots/Geographic_explain/US_real.png" 
-       alt="China Real Map" width="33%">
+       alt="China Real Map" width="20%">
   <img src="aspect-ratio-plots/Geographic_explain/US_colored_cities.png" 
-       alt="China Map with Cities" width="33%">
+       alt="China Map with Cities" width="20%">
 </div>
 
 ### Embeddings
@@ -23,9 +23,9 @@
 
 <div align="center">
   <img src="aspect-ratio-plots/Geographic_explain/EU_real.png" 
-       alt="China Real Map" width="33%">
+       alt="China Real Map" width="20%">
   <img src="aspect-ratio-plots/Geographic_explain/EU_colored_cities.png" 
-       alt="China Map with Cities" width="33%">
+       alt="China Map with Cities" width="20%">
 </div>
 
 ### Embeddings
@@ -41,9 +41,9 @@
 
 <div align="center">
   <img src="aspect-ratio-plots/Geographic_explain/CN_real.png" 
-       alt="China Real Map" width="33%">
+       alt="China Real Map" width="20%">
   <img src="aspect-ratio-plots/Geographic_explain/CN_colored_cities.png" 
-       alt="China Map with Cities" width="33%">
+       alt="China Map with Cities" width="20%">
 </div>
 
 ### Embeddings
