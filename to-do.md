@@ -6,19 +6,18 @@
 * to-do.md
 
 * aspect-ratio.md -- published
-* display-distortion-howto.md -- published, figures needed
-* manifolds-explained.md -- published, needs figs
-* manifold-learning-explained.md -- published
+* display-distortion-howto.md -- published, put a pair of figures without/with ellipses at the end SZ
+* manifolds-explained.md -- published, needs figs SZ 
+* manifold-learning-explained.md -- published (fix swiss-roll fig SZ), unfinished!! how do embedding algorithms work! to make new post MMP
 * maps-anon.md -- published  (embeddings of maps: US, Europe, China)
 * maps-embeddings.md -- published
-* smooth-embedding.md -- needs figures, is on topology
-* tsne.md -- mostly done, needs a pass over text
+* smooth-embedding.md -- needs figures, is on topology SZ (with MMP)
+* tsne.md -- mostly done, needs a pass over text MMP
 * variable_density.md -- published
 
 
 * Readme.md
   * maybe: images of word2vec, molecule (one distorted and one not) SZ
-  * maybe: list of articles in progress
   
 * aspect_ratio.md -- what is left? finalize in real time
   * umap -- stability -- and are the best embeddings really good?
