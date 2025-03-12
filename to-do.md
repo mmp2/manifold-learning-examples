@@ -1,33 +1,45 @@
 ##Contents moved with minimal updates from the original Readme.md
 
-Plan for next meeting: 
-* finalize Readme.md in real time
-  * links
-  * contributors - links, etc
-  * license and citations MMP
-  * add links to contributors (each contributor), megaman, sk-learn, images of word2vec, molecule (one distorted and one not), how to give credit/cite (done, MMP)
+#Table of contents
+
+* README.md   -- welcome page
+* to-do.md
+
+* aspect-ratio.md -- published
+* display-distortion-howto.md -- published, figures needed
+* manifolds-explained.md -- published, needs figs
+* manifold-learning-explained.md -- published
+* maps-anon.md -- published  (embeddings of maps: US, Europe, China)
+* maps-embeddings.md -- published
+* smooth-embedding.md -- needs figures, is on topology
+* tsne.md -- mostly done, needs a pass over text
+* variable_density.md -- published
+
+
+* Readme.md
+  * maybe: images of word2vec, molecule (one distorted and one not) SZ
+  * maybe: list of articles in progress
   
 * aspect_ratio.md -- what is left? finalize in real time
   * umap -- stability -- and are the best embeddings really good?
   * LLE - stability??
   * do we include t-sne?
-  * to move variable density 
   * nicer citations
   * add pictures to explanation part
   * credits and authors
-  * 
+
 * variable_density.md  who/what
 * contributions; credit -- preamble in all code; 
 * code organization
 
-
 List of Problems
 * the Aspect Ratio Problem: choosing independent eigenvectors DONE
-* the Variable Density Problem: distortions due to variable density of data on manifold
-* the Neighborhood Graph Problem: distortions due to the choice of neighborhood graph (in variable density)
+* the Variable Density Problem: distortions due to variable density of data on manifold DONE
+* the Neighborhood Graph Problem: distortions due to the choice of neighborhood graph (in variable density)  
 * Artefacts due to method inconsistency and other artefacts
 
 The first 3 problems are typical of convergent algorithms with poor choices of parameters. The last illustrates mainly the problems of non-convergent algorithms. 
+
 
 Plan for Weeks of **September 5-19** _(Priority lowest = LP < nothing < HP=highest )_
 
@@ -55,6 +67,7 @@ Done tasks
 
 Displaying the distortion
 =========================
+_(copied into display-distortion-howto.md)_
 To be "correct" an embedding algorithm must output a *diffeomorphic* mapping (that is, a function which is differentiable, and has a differentiable inverse) between the input $X_{1:n}$ and its output $Y_{1:n}$. However, the embedding algorithm is not required to preserve *geometric* properties of $X$, such as distances, or areas. Embedding algorithms usually *distort* the data. 
 
 _Figures here_

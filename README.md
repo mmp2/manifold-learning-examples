@@ -25,15 +25,19 @@ The good news is that once you are aware of their presence, the artefacts and di
      * [scikit-learn](https://scikit-learn.org) simple Manifold Learning software package
      * [megaman](mmp2.github.io/megaman/) performance optimized Manifold Learning software package, with API compatible with `sk-learn`; `megaman` implements state of the art theoretical results. Updated instructions for installing and using `megaman` on your computer are in [install_use_megaman.ipynb](install_use_megaman.ipynb), [install_env.sh](install_env.sh).
 * **a series of short articles** illustrating significant but less widely known counterintuitive behaviors of manifold learning algorithms. Most of these effects are predictable or documented theoretically, and we include (light) references to the main sources. 
-  * [aspect-ratio.md](aspect-ratio.md)  Most real (manifold) data  extends more in one direction than in others, that is, it looks more like elongated strips than as discs or blobs. This can have unexpected drastic consequences on some ML algorithms, when they are used naively. We demonstrate both what can happen, how the problem is detected by simple inspecttion and a simple way to fix it.
-  * TBW For most ML algorithms, the way we sample the data affects the algorithm's output. In other words, what we see is not just _the shape_ of the manifold, but a combination of the shape and the _density_ of the data on the manifold, that can vary by algorithm and by the parameters used. 
-  * [tsne.md (under construction)](tsne.md) t-SNE is a very popular algorithm for visualizing high-dimensional data in 2D and 3D. However, care must be taken, as sometimes the features we see do not exist in the original data. 
+  * **Aspect-ratio and horseshoes** [aspect-ratio.md](aspect-ratio.md)  Most real (manifold) data  extends more in one direction than in others, that is, it looks more like elongated strips than as discs or blobs. This can have unexpected drastic consequences on some ML algorithms, when they are used naively. We demonstrate both what can happen, how the problem is detected by simple inspecttion and a simple way to fix it. See also [Manifold learning: what, how and why](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-040522-115238) Figure 3.
+  * **Non-uniform density, stretching and contracting** [variable_density.md](variable_density.md) For most ML algorithms, the way we sample the data affects the algorithm's output. In other words, what we see is not just _the shape_ of the manifold, but a combination of the shape and the _density_ of the data on the manifold, that can vary by algorithm and by the parameters used.
+  * **Subtle effect: nearest neighbors, renormalizatioh** TBW (see [Manifold learning: what, how and why](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-040522-115238), Figure 6 in the meanwhile)
+  * **t-SNE** [tsne.md (in progress)](tsne.md) t-SNE is a very popular algorithm for visualizing high-dimensional data in 2D and 3D. However, care must be taken, as sometimes the features we see do not exist in the original data. 
+  * **UMAP** experiments (under construction). How to choose the parameters? See also [the UMAP documentation](https://umap-learn.readthedocs.io/en/latest/) and a relevant article on t-SNE, UMAP and similar algorithms [_"Attraction-Repulsion Spectrum in Neighbor Embeddings"_](https://jmlr.org/papers/volume23/21-0055/21-0055.pdf)
 
 * **the python code** used to generate the examples. Most of the examples are based on sk-learn; for spectral_embedding (aka the DiffusionMaps / LaplacianEigenmaps algorithm) the megaman code is used; for UMAP and t-SNE we used the code provided by the authors. Additionally, we occasionally share our experience in installing/running these codes. 
   * generating samples from simple synthetic manifolds (rectangle, rectangle with a hole, swiss roll=rolled up rectangle, 3D rectangle, circle, torus); in these examples, the samples are distributed nearly uniformly [more details TBW] 
   * generating samples from the same manifolds as above, but in a highly non-uniform manner (that can be controlled). 
   * generating informative plots of the algorithms' output
   * instructions on how to install megaman on windows [install_use_megaman.ipynb](install_use_megaman.ipynb), [install_env.sh](install_env.sh).
+  * instructions on [how to make the ellipse distortion plots](display-distortion-howto.md)
+
 
 * **the plots** used in the articles and many more
 
