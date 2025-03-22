@@ -51,7 +51,7 @@ Feel free to use the code, articles and graphics, citing this repository (_pleas
 * [Hangliang Ren (Harry)](https://github.com/Harryahh), spectral embedding, non-uniform density, plotting, aspect ratio
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
 * [Yujia Wu](https://github.com/yujiaw3-1933467), data generation, plotting, Local Linear Embedding, aspect ratio
-* [Shuzhen Zhang](https://stat.uw.edu/people/shuzhen-zhang) manifold learning explained, Riemannian metric, maps embeddings
+* [Shuzhen Zhang](https://stat.uw.edu/people/shuzhen-zhang) manifold learning explained, Riemannian metric, maps embeddings, site curator 2024
 
 
 
