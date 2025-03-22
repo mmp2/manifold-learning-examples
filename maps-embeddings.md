@@ -4,7 +4,7 @@
 ### Original Map
 
 <div align="center">
-  <img src="aspect-ratio-plots/Geographic_explain/US_real.png" 
+  <img src="aspect-ratio-plots/Geographic_explain/US_real.jpg" 
        alt="China Real Map" width="27%">
   <img src="aspect-ratio-plots/Geographic_explain/US_colored_cities.png" 
        alt="China Map with Cities" width="27%">
