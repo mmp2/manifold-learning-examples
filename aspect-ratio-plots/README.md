@@ -26,3 +26,8 @@ The files are named according to the following format: (which_data) _ (algorithm
 > **Notes: (SwissRoll) _ (rectangle)**: Refers to SwissRoll data, deformed by the algorithm into a rectangular shape. Algorithms not included
 
 These conventions help identify the dataset, algorithm, and specific features used in each plot.
+
+
+## Special Notification: 
+- There are many figs in this directory create from unknown person 3 years ago, those figs contain problems
+- The **V0,V1** eigen vector of spectral embedding of circle none - circle property, which is unexpected 
