@@ -4,7 +4,7 @@
 ### Original Map
 
 <div align="center">
-  <img src="aspect-ratio-plots/Geographic_explain/US_real.jpg" 
+  <img src="aspect-ratio-plots/Geographic_explain/US_real.png" 
        alt="China Real Map" width="27%">
   <img src="aspect-ratio-plots/Geographic_explain/US_colored_cities.png" 
        alt="China Map with Cities" width="27%">
@@ -60,3 +60,19 @@
 | ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_Name_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_Name_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_Name_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_Name_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_Name_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_Name_69.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Isomap | LE | LLE | LTSA | UMAP | t-SNE | -->
+
+---
+
+### Map Image Credits
+
+- **East Asia Topographic Map** by [Ksiom](https://commons.wikimedia.org/wiki/User:Ksiom)  
+  Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and [GFDL 1.2+](https://www.gnu.org/licenses/old-licenses/fdl-1.2.html)  
+  [View Image](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/East_Asia_topographic_map.png/500px-East_Asia_topographic_map.png)
+
+- **US Painted Relief Map** by [Kmusser](https://commons.wikimedia.org/wiki/User:Kmusser)  
+  Public domain  
+  [View Image](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Uspaintedrelief.png/500px-Uspaintedrelief.png)
+
+- **Europe Topography Map** by [San Jose](https://commons.wikimedia.org/wiki/User:San_Jose)  
+  Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and [GFDL 1.2+](https://www.gnu.org/licenses/old-licenses/fdl-1.2.html)  
+  [View Image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Europe_topography_map_en.png/1000px-Europe_topography_map_en.png)
