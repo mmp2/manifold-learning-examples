@@ -129,8 +129,6 @@ A manifold with $d=3$
 ---------------------
 (brick?, ellipsoid? swiss roll?)
 
-A "cute" manifold
-------------------
 
 Explanation, diagnosis, and what to do
 ---------------------------------------
