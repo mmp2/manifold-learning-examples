@@ -52,6 +52,22 @@
 | **Isomap** | **LE** | **LLE** | **LTSA** | **t-SNE** | **UMAP** |
 
 
+## Shape W (University of Waterloo)
+
+### Original Map 
+<div align="center">
+  <img src="uw-map/UW_ArcGIS.png" 
+       alt="University of Waterloo Campus Map" width="27%">
+  <img src="uw-map/Color/UW_Sampling_Color.png" 
+       alt="China Map with Cities" width="27%">
+</div>
+
+### Embeddings
+| ![Isomap](uw-map/Color/UW_Isomap_Color.png) | ![LE](uw-map/Color/UW_LE_Color.png) | ![LLE](uw-map/Color/UW_LLE_Color.png) | ![LTSA](uw-map/Color/UW_LTSA_Color.png) | ![t-SNE](uw-map/Color/UW_TSNE_Color.png) | ![UMAP](uw-map/Color/UW_UMAP_Color.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Isomap** | **LE** | **LLE** | **LTSA** | **t-SNE** | **UMAP** |
+
+
 
 <!-- | ![Isomap](aspect-ratio-plots/China_map/ChinaMap_Isomap_noName_69.png) | ![LE](aspect-ratio-plots/China_map/ChinaMap_LE_noName_69.png) | ![LLE](aspect-ratio-plots/China_map/ChinaMap_LLE_noName_69.png) | ![LTSA](aspect-ratio-plots/China_map/ChinaMap_LTSA_noName_69.png) | ![UMAP](aspect-ratio-plots/China_map/ChinaMap_Umap_noName_69.png) | ![t-SNE](aspect-ratio-plots/China_map/ChinaMap_t-SNE_noName_69.png) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -70,3 +86,5 @@
 - **US Painted Relief Map** by [Kmusser](https://commons.wikimedia.org/wiki/User:Kmusser) Public domain [View Image](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Uspaintedrelief.png/500px-Uspaintedrelief.png)
 
 - **Europe Topography Map** by [San Jose](https://commons.wikimedia.org/wiki/User:San_Jose) Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and [GFDL 1.2+](https://www.gnu.org/licenses/old-licenses/fdl-1.2.html) [View Image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Europe_topography_map_en.png/1000px-Europe_topography_map_en.png)
+
+- **UW Map** taken from [ArcGIS Scene Viewer](https://www.arcgis.com/home/item.html?id=a3c568e6630e47b7841ccf6ea73108dd)

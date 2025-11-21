@@ -30,5 +30,12 @@ The same 2D shape was embedded by various algorithms. Can you recognize what it 
 - [Isomap](/aspect-ratio-plots/Geographic_explain/CN/CN_Isomap_01_gray.png)
 - [LTSA](/aspect-ratio-plots/Geographic_explain/CN/CN_LTSA_01_gray.png)
 
+## Shape W
+- [LLE](/uw-map/Gray/UW_LLE_Gray.png)
+- [LE](/uw-map/Gray/UW_LE_Gray.png)
+- [UMAP](/uw-map/Gray/UW_UMAP_Gray.png)
+- [t-SNE](/uw-map/Gray/UW_TSNE_Gray.png)
+- [Isomap](/uw-map/Gray/UW_Isomap_Gray.png)
+- [LTSA](/uw-map/Gray/UW_LTSA_Gray.png)
 
 Go to the [answers](/maps-embeddings.md)
