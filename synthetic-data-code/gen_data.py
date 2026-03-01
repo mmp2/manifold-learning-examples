@@ -28,6 +28,22 @@ def make_torus(points, a, b):
     data = np.vstack((x, y, z))
     return data.T
 
+def make_torus_4d(points, a, b, c):
+    X = points[:, 0]
+    Y = points[:, 1]
+    Z = points[:, 2]
+    
+    sigma = 2*np.pi*Y/b
+    phi = 2*np.pi*X/a
+    rho = 2*np.pi*Z/c 
+
+    x = (a + b * np.cos(sigma)) * np.cos(phi)
+    y = (a + b * np.cos(sigma)) * np.sin(phi)
+    z = b * np.sin(sigma) * np.cos(rho)
+    w = b * np.sin(sigma) * np.sin(rho)
+    data = np.vstack((x, y, z, w))
+    return data.T
+
 def make_swiss_roll(points, a, b):
     X = points[:, 0]
     Y = points[:, 1]
@@ -37,6 +53,23 @@ def make_swiss_roll(points, a, b):
     x = t * np.cos(t)
     z = t * np.sin(t)
     data = np.vstack((x, y, z))
+    return data.T
+
+def make_swiss_roll_4d(points, a, b, c):
+    X = points[:, 0]
+    Y = points[:, 1]
+    Z = points[:, 2]
+
+    t = 1.5 * np.pi * (X / a * 2 + 1)
+
+    length_y = 10
+    length_w = 10
+
+    y = Y / b * length_y 
+    x = t * np.cos(t)
+    z = t * np.sin(t) 
+    w = Z / c * length_w 
+    data = np.vstack((x, y, z, w))
     return data.T
 
 def non_uniform_swiss(a=10, b=5, K=2, sigma=5/4, n=10000, grid=True, seed=999):

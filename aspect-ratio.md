@@ -60,7 +60,7 @@ The $v$ notation for embedding coordinates is motivated by the fact that most em
 | ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 | 15.79 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |    :----:    | 
 | UMAP    | <img src = https://user-images.githubusercontent.com/81238710/190961595-41515ac0-3437-4c6d-b70f-56f964cfb086.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961596-5bb5a029-5743-4b7e-9b19-defbded719a7.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961597-dabfe06d-232b-4c8e-a4b8-fb3956a8b3d3.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961600-de79c4df-037f-4ba4-b8c0-1880f4ef09e6.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961601-d6a0e72b-b835-4ad5-8be8-8752c61022d8.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961602-653e8a59-05d9-4b6a-b26b-ebf6e8443736.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961603-81266b80-536d-4fa3-bfbb-4d89ed1d34c4.jpeg width="111" height="111"> | <img src = https://user-images.githubusercontent.com/81238710/190961604-d1b06b31-ce45-4ec2-abd2-b242a7c4efd2.jpeg width="111" height="111"> |
-| Eigenvectors ($v_1$ denotes first eigenvector, $v_2$ denotes second eigenvector, and so on) | $\{v_1, v_2\}$ |  $\{v_1, v_3\}$ |  $\{v_1, v_4\}$ |  $\{v_1, v_5\}$ |  $\{v_1, v_6\}$ |  $\{v_1, v_8\}$ |  $\{v_1, v_8\}$ |  $\{v_1, v_{10}\}$ | 
+| Eigenvectors ($v_0$ denotes first eigenvector, $v_1$ denotes second eigenvector, and so on) | $\{v_0, v_1\}$ |  $\{v_0, v_2\}$ |  $\{v_0, v_3\}$ |  $\{v_0, v_4\}$ |  $\{v_0, v_5\}$ |  $\{v_0, v_7\}$ |  $\{v_0, v_7\}$ |  $\{v_0, v_9\}$ | 
 
 Swiss roll
 ----------
@@ -80,7 +80,7 @@ A swiss roll is just a rectangle rolled up. So, the embedding algorithms should 
 | ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |
 | UMAP    | <img src =https://user-images.githubusercontent.com/81238710/190962239-ba4b96ec-5b65-4a84-a8f3-f70b3d46bde5.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962241-9b9ee4ce-ba3a-4327-8d0c-1f4099e9de89.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962244-b710a3aa-053f-4af2-8d58-f2256d54100d.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962238-03541129-ef57-4fab-944e-b8c14b988e90.jpeg width="125" height="189"> | <img src =https://user-images.githubusercontent.com/81238710/190962240-619ccf87-f876-414f-9af2-4d81f600c4f5.jpeg width="125" height="189"> |  |  |
-|Eigenvectors| $\{v_1, v_3\}$ |  $\{v_1, v_4\}$ |  $\{v_1, v_4\}$ | $\{v_1, v_4\}$ |  $\{v_1, v_7\}$ |  | | 
+|Eigenvectors| $\{v_0, v_2\}$ |  $\{v_0, v_3\}$ |  $\{v_0, v_3\}$ | $\{v_0, v_3\}$ |  $\{v_0, v_6\}$ |  | | 
 
 
 
@@ -102,7 +102,7 @@ Because ML algorithms are "myopic", and only see small neighborhoods around each
 | ML algo | 1.33         | 2.5       | 3.16 | 4.21 | 5.26 | 8.42 | 10.53 | 15.79 |
 | :---                        |    :----:   |   :---: |   :----:    |   :----:    |    :----:    |    :----:    |    :----:    |    :----:    | 
 | UMAP    | <img src = https://user-images.githubusercontent.com/81238710/190962576-5093604c-3e4c-4ad5-a78e-59d1bd10b0ba.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962577-24613454-b43d-489a-b8bd-85d779bfe297.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962578-8dba2f01-3077-4e2b-b0e8-78f192dde5a6.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962579-43019d04-e61a-4027-961d-a69d7bf9c138.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962580-f4000ab3-7f66-4974-8343-8e86405b7347.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962582-d49c09be-abed-43ab-93c1-076e17d818fb.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962586-157a127b-d72e-46bf-b3a1-251c7c844e0e.jpeg width="111" height="168"> | <img src = https://user-images.githubusercontent.com/81238710/190962587-19b65f01-aef4-4186-af6a-6483e03ddc3b.jpeg width="111" height="168"> |
-| Eigenvectors | $\{v_1, v_2\}$ | $\{v_1, v_2\}$ | $\{v_1, v_2\}$ | $\{v_1, v_8\}$ | $\{v_1, v_7\}$ | $\{v_1, v_8\}$ | $\{v_1, v_3\}$ | $\{v_1, v_6\}$ | 
+| Eigenvectors | $\{v_0, v_1\}$ | $\{v_0, v_1\}$ | $\{v_0, v_1\}$ | $\{v_0, v_7\}$ | $\{v_0, v_6\}$ | $\{v_0, v_7\}$ | $\{v_0, v_2\}$ | $\{v_0, v_5\}$ | 
 
 Torus
 -----
@@ -127,7 +127,7 @@ Torus
 
 A manifold with $d=3$ 
 ---------------------
-(brick?, ellipsoid? swiss roll?)
+This is currently under construction. 
 
 
 Explanation, diagnosis, and what to do

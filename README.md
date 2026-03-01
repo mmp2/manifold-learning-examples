@@ -52,6 +52,6 @@ Feel free to use the code, articles and graphics, citing this repository (_pleas
 * [Qirui Wang](https://github.com/Typhoeus-Wang), UMAP, aspect ratio
 * [Yujia Wu](https://github.com/yujiaw3-1933467), data generation, plotting, Local Linear Embedding, aspect ratio
 * [Shuzhen Zhang](https://stat.uw.edu/people/shuzhen-zhang) manifold learning explained, Riemannian metric, maps embeddings, site curator 2024
-
+* [Kevin Kang](https://github.com/LithiumEngineer), University of Waterloo embeddings, aspect ratio
 
 
