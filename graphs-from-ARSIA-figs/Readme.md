@@ -1,8 +1,30 @@
 # README: Graph Generation from Manifold Algorithms
 
-This folder contains a collection of graphs generated using various manifold learning algorithms. Each graph represents different datasets and configurations, capturing the results of different approaches and visual styles.
+This folder contains a collection of graphs generated using various manifold learning algorithms. Each graph represents different datasets and configurations, capturing the results of different approaches and visual styles. All figures here were created by running: [Review-figures.ipynb](../Review-figures.ipynb) 
 
-### Naming Convention for Files:
+## Explanation of workflow:
+We start from a dataset, choose a manifold method to map it into **2D**, optionally add a **local-metric overlay**, then save the figure using a consistent filename.
+
+### 1) Data
+- `sr_` comes from a Swiss roll dataset (generated in the notebook and cached as a `.pickle`).
+- `inward_ct_` comes from an inward chopped torus dataset (generated in the notebook and cached as a `.pickle`).
+- `mnist_` comes from `sklearn.datasets.load_digits(n_class=6)`.
+
+### 2) Method 
+For each dataset, the notebook:
+- computes a **2D embedding** with a chosen manifold algorithm,
+- colors points using a chosen **direction** (`horiz` vs `vert`),
+- optionally computes a **local metric** and draws **ellipses** (`with_metric`) to visualize local distortion,
+- optionally increases point size (`largedot`),
+- exports the plot into this folder.
+
+### 3) Algorithm
+Algorithms used:
+- `Isomap`, `LE` (Spectral Embedding), `LTSA`, `LLE` (via `megaman`)
+- `t-SNE` (via `sklearn`)
+- `Umap` (via `umap`)
+
+## Naming Convention for Files:
 Each graph's filename consists of 5 components, with the following format:
 
 `(dataset)_(algorithm)_(metric)_(coloring_direction)_(point_size)`
