@@ -10,7 +10,6 @@ The same 2D shape was embedded by various algorithms. Can you recognize what it 
 - [t-SNE](/aspect-ratio-plots/Geographic_explain/US/US_t-SNE_01_gray.png)
 - [Isomap](/aspect-ratio-plots/Geographic_explain/US/US_Isomap_01_gray.png)
 - [LTSA](/aspect-ratio-plots/Geographic_explain/US/US_LTSA_01_gray.png)
-
 ---
 
 ## Shape B 
@@ -29,6 +28,16 @@ The same 2D shape was embedded by various algorithms. Can you recognize what it 
 - [t-SNE](/aspect-ratio-plots/Geographic_explain/CN/CN_t-SNE_01_gray.png)
 - [Isomap](/aspect-ratio-plots/Geographic_explain/CN/CN_Isomap_01_gray.png)
 - [LTSA](/aspect-ratio-plots/Geographic_explain/CN/CN_LTSA_01_gray.png)
+---
+
+## Shape D 
+- [LE](/aspect-ratio-plots/Geographic_explain/CA/CA_LE_gray.png)
+- [UMAP](/aspect-ratio-plots/Geographic_explain/CA/CA_Umap_gray.png)
+- [t-SNE](/aspect-ratio-plots/Geographic_explain/CA/CA_t-SNE_gray.png)
+- [LLE](/aspect-ratio-plots/Geographic_explain/CA/CA_LLE_gray.png)
+- [Isomap](/aspect-ratio-plots/Geographic_explain/CA/CA_Isomap_gray.png)
+- [LTSA](/aspect-ratio-plots/Geographic_explain/CA/CA_LTSA_gray.png)
+---
 
 ## Shape W
 - [LLE](/uw-map/Gray/UW_LLE_Gray.png)

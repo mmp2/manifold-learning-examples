@@ -51,6 +51,25 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | **Isomap** | **LE** | **LLE** | **LTSA** | **t-SNE** | **UMAP** |
 
+---
+
+## Shape D (Canada)
+
+### Original Map
+
+<div align="center">
+  <img src="aspect-ratio-plots/Geographic_explain/CA_real.png" 
+       alt="Canada Real Map" width="27%">
+  <img src="aspect-ratio-plots/Geographic_explain/CA_colored_cities.png" 
+       alt="Canada Map with Cities" width="27%">
+</div>
+
+### Embeddings
+| ![Isomap](/aspect-ratio-plots/Geographic_explain/CA/CA_Isomap_colored_cities.png) | ![LE](/aspect-ratio-plots/Geographic_explain/CA/CA_LE_colored_cities.png) | ![LLE](/aspect-ratio-plots/Geographic_explain/CA/CA_LLE_colored_cities.png) | ![LTSA](/aspect-ratio-plots/Geographic_explain/CA/CA_LTSA_colored_cities.png) | ![t-SNE](/aspect-ratio-plots/Geographic_explain/CA/CA_t-SNE_colored_cities.png) | ![UMAP](/aspect-ratio-plots/Geographic_explain/CA/CA_Umap_colored_cities.png) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Isomap** | **LE** | **LLE** | **LTSA** | **t-SNE** | **UMAP** |
+
+---
 
 ## Shape W (University of Waterloo)
 
@@ -86,5 +105,7 @@
 - **US Painted Relief Map** by [Kmusser](https://commons.wikimedia.org/wiki/User:Kmusser) Public domain [View Image](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Uspaintedrelief.png/500px-Uspaintedrelief.png)
 
 - **Europe Topography Map** by [San Jose](https://commons.wikimedia.org/wiki/User:San_Jose) Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and [GFDL 1.2+](https://www.gnu.org/licenses/old-licenses/fdl-1.2.html) [View Image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Europe_topography_map_en.png/1000px-Europe_topography_map_en.png)
+
+- **Relief Map of Canada** Government of Canada;Natural Resources Canada;Strategic Policy and Innovation Sector, Canada Centre for Mapping and Earth Observation, GeoDiscovery. (2024-11-01). *Atlas of Canada - Relief Map of Canada MCR0101E.* Licensed under [Open Government License - Canada](https://open.canada.ca/en/open-government-licence-canada) [View Map](https://atlas.gc.ca/relief/Atlas_Relief_EN.html)
 
 - **UW Map** taken from [ArcGIS Scene Viewer](https://www.arcgis.com/home/item.html?id=a3c568e6630e47b7841ccf6ea73108dd)
